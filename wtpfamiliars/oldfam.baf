@@ -3,7 +3,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("fampsd","GLOBAL",0)
-    MoveGlobalObject("fampsd",%famsummoner%)  // Pseudo-dragon
+    MoveGlobalObject("fampsd",%famsummoner%)  // %pseudo%
 END
 
 IF

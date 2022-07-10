@@ -431,35 +431,67 @@ COPY ~WTPFamiliars/wtpspide.cre~ ~override~
   SAY SELECT_RARE2 ~~ [wtpspd13]
 
 /*  Invisible Creatures  */
+// add names and tooltip strings for editors
 
+// Pseudodragon
 COPY ~WTPFamiliars/wtpnag1.cre~ ~override~
+  SAY 0x8 @515
+  SAY 0xC @515
   SAY BORED ~~ [wtpfae01]
 
+// Fairy Dragon
 COPY ~WTPFamiliars/wtpnag2.cre~ ~override~
+  SAY 0x8 @518
+  SAY 0xC @518
   SAY BORED ~~ [wtpfae01]
 
+// Ferret
 COPY ~WTPFamiliars/wtpnag3.cre~ ~override~
+  SAY 0x8 @516
+  SAY 0xC @516
   SAY BORED ~~ [wtpfer01]
 
+// Cat
 COPY ~WTPFamiliars/wtpnag4.cre~ ~override~
+  SAY 0x8 @512
+  SAY 0xC @512
   SAY BORED ~~ [wtpcat01]
 
+// Rabbit
 COPY ~WTPFamiliars/wtpnag5.cre~ ~override~
+  SAY 0x8 @519 
+  SAY 0xC @519 
   SAY BORED ~~ [wtprab01]
 
+// Spider
 COPY ~WTPFamiliars/wtpnag6.cre~ ~override~
+  SAY 0x8 @513
+  SAY 0xC @513
   SAY BORED ~~ [wtpspd01]
 
+// Imp
 COPY ~WTPFamiliars/wtpnag7.cre~ ~override~
+  SAY 0x8 @514
+  SAY 0xC @514
   SAY BORED ~~ [wtpimp01]
 
+// Dust Mephit
 COPY ~WTPFamiliars/wtpnag8.cre~ ~override~
+  SAY 0x8 @517
+  SAY 0xC @517
   SAY BORED ~~ [wtpmep02]
 
+// Quasit
 COPY ~WTPFamiliars/wtpnag9.cre~ ~override~
+  SAY 0x8 @511
+  SAY 0xC @511
   SAY BORED ~~ [wtpimp01]
 
+// Ferret
 COPY ~WTPFamiliars/wtptaun.cre~ ~override~
+  SAY 0x8 @516
+  SAY 0xC @516
+
 
 /*  wtpfamps.itm
   Familiar        */
@@ -537,10 +569,42 @@ COPY ~WTPFamiliars/wtpfama.spl~ ~override/spwi123.spl~
 COPY ~WTPFamiliars/wtpfamab.spl~ ~override/spcl342.spl~
   SAY 0x8 @0
   SAY 0x50 @2
+  
+// string replacements for simplecopy resources
 
+// Find Familiar scroll
 COPY_EXISTING ~scrl6d.itm~ ~override~
   SAY 0x8 @0
+  SAY 0xC @0
   SAY 0x54 @2
+
+// Dust Mephit
+COPY_EXISTING ~wtpdmsum.cre~ ~override~
+  SAY 0x8 @517
+  SAY 0xC @517
+
+// Amulet of Cheetah Speed
+COPY_EXISTING ~wtpfmweb.itm~ ~override~
+  SAY 0x8 @1150
+  SAY 0xC @1150
+
+// Glass Dust
+COPY_EXISTING ~wtpin13.spl~ ~override~
+  SAY 0x8 @1151
+  
+// Wish
+COPY_EXISTING ~wtpwis1.spl~ ~override~
+  SAY 0x8 @1152
+
+// Genie
+COPY_EXISTING ~wtpwish.cre~ ~override~
+  SAY 0x8 @1153
+  SAY 0xC @1153
+
+// Sandthief's Ring
+COPY_EXISTING ~wtpwrspi.itm~ ~override~
+  SAY 0x8 @1154
+  SAY 0xC @1154
 
 ///////////////////////////////////////////////////////////////////////
 ///Select Familiar spells - appear on screen when cast Find Familiar///
@@ -665,7 +729,6 @@ COPY_EXISTING ~wtpffae.bcs~ ~override~
                                         ~WIZARD_ANTIMAGIC_SHELL~
                                         ~WIZARD_PROTECTION_FROM_MAGIC_WEAPONS~
                                         ~WIZARD_SPELL_DEFLECTION~
-                                        ~WIZARD_TROLLISH_FORTITUDE~
                                         ~WIZARD_SPELL_TURNING~
                                         ~WIZARD_PROJECT_IMAGE~
                                         ~WIZARD_MANTLE~
@@ -687,9 +750,20 @@ END
 
 // Extend Baldur.bcs and baldur25.bcs so Familiar follows PC from area to area and works for ToB Familiar summon too!
 
+// newfam.baf is required for releasing familiar from pack 
 ACTION_IF GAME_IS ~bgt tob bg2ee eet~ BEGIN
+  // "Pseudo-dragon" comment variant
+  OUTER_SPRINT pseudo @1155 
   COPY_EXISTING ~baldur.bcs~   ~override~
                 ~baldur25.bcs~ ~override~
+    REPLACE_BCS_BLOCK EVALUATE_BUFFER ~WTPFamiliars/oldfam.baf~ ~WTPFamiliars/newfam.baf~
+    BUT_ONLY
+END
+
+ACTION_IF GAME_IS ~bgee iwdee~ BEGIN
+  // "Pseudo Dragon" comment variant
+  OUTER_SPRINT pseudo @1156 
+  COPY_EXISTING ~baldur.bcs~   ~override~
     REPLACE_BCS_BLOCK EVALUATE_BUFFER ~WTPFamiliars/oldfam.baf~ ~WTPFamiliars/newfam.baf~
     BUT_ONLY
 END
