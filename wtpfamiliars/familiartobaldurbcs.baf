@@ -665,9 +665,8 @@ IF
     Global("WTPFAMLE","GLOBAL",2)
 THEN
   RESPONSE #100
-    //ActionOverride(%famsummoner%,DisplayString(Myself,@1157))
     ActionOverride(%famsummoner%,SetGlobal("#GSCRFAI","LOCALS",0))
-	DisplayString(Myself,@1157)
+	DisplayString(Myself,@1160) // Already summoned
     SetGlobal("WTPFAMA1","GLOBAL",0)
 END
 
@@ -688,9 +687,8 @@ IF
     Global("WTPFAMLE","GLOBAL",2)
 THEN
   RESPONSE #100
-    //ActionOverride(%famsummoner%,DisplayString(Myself,@1157))
-    ActionOverride(%famsummoner%,NoAction())
-	DisplayString(Myself,@1157)  // WorldMsgBox consistency
+    ActionOverride(%famsummoner%,NoAction()) // separate DisplayString() for WorldMessage consistency
+	DisplayString(Myself,@1160)  // Already summoned
     SetGlobal("WTPFAMA1","GLOBAL",0)
 END
 
@@ -709,7 +707,7 @@ IF
 	SpellCast(Player6,BEASTMASTER_FIND_FAMILIAR)
 THEN
   RESPONSE #100
-    ActionOverride(Myself,DisplayString(Myself,@1158))
+    ActionOverride(Myself,DisplayString(Myself,@1161)) // Protagonist only
     SetGlobal("WTPFAMA1","GLOBAL",0)
 END
 
@@ -730,7 +728,7 @@ THEN
     ActionOverride(Player4,SetGlobal("#GSCRFAI","LOCALS",0))
     ActionOverride(Player5,SetGlobal("#GSCRFAI","LOCALS",0))
     ActionOverride(Player6,SetGlobal("#GSCRFAI","LOCALS",0))
-    DisplayString(Myself,@1158)
+    DisplayString(Myself,@1161) // Protagonist only
     SetGlobal("#GSCRFAI","GLOBAL",0) // undo #GSCRFAI 1 getting set as global for some reason
     SetGlobal("WTPFAMA1","GLOBAL",0)
 END

@@ -24,11 +24,11 @@ ALWAYS
   END
 
   // Summoner
-  ACTION_IF (GAME_IS ~iwdee~) BEGIN
-    OUTER_SPRINT famsummoner ~FamiliarSummoner~
-  END ELSE BEGIN
-    OUTER_SPRINT famsummoner ~Player1~
-  END
+  // ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  //  OUTER_SPRINT famsummoner ~FamiliarSummoner~
+  //END ELSE BEGIN
+    OUTER_SPRINT famsummoner ~Player1~ // Player1 is required for WTPFamiliar scripts
+  //END
 
   // BG1/SoD chapters
   ACTION_IF (GAME_IS ~bgt~) BEGIN
@@ -749,20 +749,38 @@ COPY_EXISTING ~wtpffae.bcs~ ~override~
 END
 
 // Extend Baldur.bcs and baldur25.bcs so Familiar follows PC from area to area and works for ToB Familiar summon too!
+// newfam.baf code is required for releasing familiar from pack
 
-// newfam.baf is required for releasing familiar from pack 
 ACTION_IF GAME_IS ~bgt tob bg2ee eet~ BEGIN
-  // "Pseudo-dragon" comment variant
-  OUTER_SPRINT pseudo @1155 
+  OUTER_SPRINT oldfamsummoner ~Player1~
+  OUTER_SPRINT pseudo ~Pseudo-dragon~ // "Pseudo-dragon" comment variant
   COPY_EXISTING ~baldur.bcs~   ~override~
                 ~baldur25.bcs~ ~override~
     REPLACE_BCS_BLOCK EVALUATE_BUFFER ~WTPFamiliars/oldfam.baf~ ~WTPFamiliars/newfam.baf~
     BUT_ONLY
 END
 
-ACTION_IF GAME_IS ~bgee iwdee~ BEGIN
-  // "Pseudo Dragon" comment variant
-  OUTER_SPRINT pseudo @1156 
+ACTION_IF GAME_IS ~bgee~ BEGIN
+  OUTER_SPRINT oldfamsummoner ~Player1~
+  OUTER_SPRINT pseudo ~Pseudo Dragon~ // "Pseudo Dragon" comment variant
+  COPY_EXISTING ~baldur.bcs~   ~override~
+    REPLACE_BCS_BLOCK EVALUATE_BUFFER ~WTPFamiliars/oldfam.baf~ ~WTPFamiliars/newfam.baf~
+    BUT_ONLY
+END
+
+ACTION_IF GAME_INCLUDES ~sod~ BEGIN
+  OUTER_SPRINT oldfamsummoner ~FamiliarSummoner~
+  OUTER_SPRINT pseudo ~Pseudo Dragon~ // "Pseudo Dragon" comment variant
+  COPY_EXISTING ~bdbaldur.bcs~   ~override~
+    REPLACE_BCS_BLOCK EVALUATE_BUFFER ~WTPFamiliars/oldfam.baf~ ~WTPFamiliars/newfam.baf~
+    BUT_ONLY
+  EXTEND_BOTTOM ~bdbaldur.bcs~ ~WTPFamiliars/familiartobaldurbcs.baf~
+    EVALUATE_BUFFER
+END
+
+ACTION_IF GAME_IS ~iwdee~ BEGIN
+  OUTER_SPRINT oldfamsummoner ~FamiliarSummoner~
+  OUTER_SPRINT pseudo ~Pseudo Dragon~ // "Pseudo Dragon" comment variant
   COPY_EXISTING ~baldur.bcs~   ~override~
     REPLACE_BCS_BLOCK EVALUATE_BUFFER ~WTPFamiliars/oldfam.baf~ ~WTPFamiliars/newfam.baf~
     BUT_ONLY
@@ -773,6 +791,8 @@ EXTEND_BOTTOM ~baldur.bcs~   ~WTPFamiliars/familiartobaldurbcs.baf~
 
 EXTEND_BOTTOM ~baldur25.bcs~ ~WTPFamiliars/familiartobaldurbcs.baf~
   EVALUATE_BUFFER
+
+
 
 // Extend ar0602.bcs to account for the new familiars
 

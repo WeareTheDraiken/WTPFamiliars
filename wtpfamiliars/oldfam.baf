@@ -3,7 +3,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("fampsd","GLOBAL",0)
-    MoveGlobalObject("fampsd",%famsummoner%)  // %pseudo%
+    MoveGlobalObject("fampsd",%oldfamsummoner%)  // %pseudo%
 END
 
 IF
@@ -11,7 +11,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("famfer","GLOBAL",0)
-    MoveGlobalObject("famfer",%famsummoner%)  // Ferret
+    MoveGlobalObject("famfer",%oldfamsummoner%)  // Ferret
 END
 
 IF
@@ -19,7 +19,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("famimp","GLOBAL",0)
-    MoveGlobalObject("famimp",%famsummoner%)  // Imp
+    MoveGlobalObject("famimp",%oldfamsummoner%)  // Imp
 END
 
 IF
@@ -27,7 +27,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("famrab","GLOBAL",0)
-    MoveGlobalObject("famrab",%famsummoner%)  // Rabbit
+    MoveGlobalObject("famrab",%oldfamsummoner%)  // Rabbit
 END
 
 IF
@@ -35,7 +35,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("famdust","GLOBAL",0)
-    MoveGlobalObject("famdust",%famsummoner%)  // Dust Mephit
+    MoveGlobalObject("famdust",%oldfamsummoner%)  // Dust Mephit
 END
 
 IF
@@ -43,7 +43,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("famfair","GLOBAL",0)
-    MoveGlobalObject("famfair",%famsummoner%)  // Fairy Dragon
+    MoveGlobalObject("famfair",%oldfamsummoner%)  // Fairy Dragon
 END
 
 IF
@@ -51,7 +51,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("famcat","GLOBAL",0)
-    MoveGlobalObject("famcat",%famsummoner%)  // Cat
+    MoveGlobalObject("famcat",%oldfamsummoner%)  // Cat
 END
 
 IF
@@ -59,5 +59,5 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("famquas","GLOBAL",0)
-    MoveGlobalObject("famquas",%famsummoner%)  // Quasit
+    MoveGlobalObject("famquas",%oldfamsummoner%)  // Quasit
 END
