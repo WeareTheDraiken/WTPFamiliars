@@ -578,6 +578,10 @@ COPY_EXISTING ~scrl6d.itm~ ~override~
   SAY 0xC @0
   SAY 0x54 @2
 
+// Find Familiar selection
+COPY_EXISTING ~wtpfama1.spl~ ~override~
+  SAY 0x8 @0
+
 // Dust Mephit
 COPY_EXISTING ~wtpdmsum.cre~ ~override~
   SAY 0x8 @517

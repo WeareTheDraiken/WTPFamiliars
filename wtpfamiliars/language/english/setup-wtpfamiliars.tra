@@ -154,7 +154,7 @@ Area of Effect: Special
 Saving Throw: None
 
 A Dust Mephit can attempt to gate in another of his kind to share his tragic alienation. Since these ghoulish creatures find death morbidly fascinating, it is safe to believe the dust mephit will not hesitate to engage even in the most hopeless battle.~
-@51   = ~This is your familiar, a dust mephit, currently safe within your backpack. Dust mephits have dusky brown skin, eyes, and wings and pose as tragic yet fashionable victims of a gloomy fate, heroically holding out against utter insanity. They favor lines like 'A dust mephit I am, lest dust I become!'
+@51   = ~This is your familiar, a dust mephit, currently safe within your backpack. Dust mephits have dusky brown skin, eyes, and wings and pose as tragic yet fashionable victims of a gloomy fate, heroically holding out against utter insanity. They favor lines like "A dust mephit I am, lest dust I become!".
 
 Abilities (Level 1):
 
@@ -163,7 +163,7 @@ Hit Points: 4
 Attacks per Round: 2
 
 Special abilities: Has 50% resistance to fire and 50% resistance to slashing, piercing, and missile damage
-Can use 'Glass Dust' once per day (-4 AC and -2 THAC0 for 3 rounds to humanoids in a 15' radius)
+Can use Glass Dust once per day (-4 AC and -2 THAC0 for 3 rounds to humanoids in a 15' radius)
 Regenerates 1 HP / turn
 Immunity to critical hits
 Empowerment: the familiar receives a level-based, affinity-modified bonus to Hit Points, THAC0 and Armor Class if in proximity of the master
@@ -214,7 +214,7 @@ Hit Points: 4
 Attacks per Round: 1
 Backstab multiplier: x2
 Special abilities: Rapid motions (always hasted)
-Can cast 'War Dance' once per day (taunts one enemy)
+Can cast War Dance once per day (taunts one enemy)
 Empowerment: the familiar receives a level-based, affinity-modified bonus to Saving Throws and Armor Class if in proximity of the master
 
 Note: your familiar improves and levels up too.
@@ -239,7 +239,7 @@ Attacks per Round: 1
 Magic Resistance: 25%
 Special abilities: Has 50% resistance to fire, cold, and electricity
 Regenerates 1 HP / round
-Can cast 'Detect Good' once per day
+Can cast Detect Good once per day
 Grants 2% magic resistance to the wizard provided no distance greater than 15 feet separates them
 Spell bounce: the familiar has an affinity-modified chance of mirroring the effects of personal protective spells cast by the master
 
@@ -268,7 +268,7 @@ Attacks per Round: 3
 Magic Resistance: 25%
 Special abilities: Has 50% resistance to fire, cold, and electricity
 Regenerates 1 HP / round
-Can cast 'Detect Good' once per day
+Can cast Detect Good once per day
 Immunity to critical hits
 Empowerment: the familiar receives a level-based, affinity-modified bonus to Hit Points, THAC0 and Armor Class if in proximity of the master
 
@@ -295,7 +295,7 @@ Armor Class: 2
 Hit Points: 4
 Attacks per Round: 1
 Magic Resistance: 35%
-Special abilities: Can cast 'Camouflage' once per day
+Special abilities: Can cast Camouflage once per day
 It attacks with a +4 bonus
 Grants 2% magic resistance to the wizard provided no distance greater than 15 feet separates them
 Spell bounce: the familiar has an affinity-modified chance of mirroring the effects of personal protective spells cast by the master
@@ -321,7 +321,7 @@ Hit Points:  4
 Attacks per Round: 1
 Backstab multiplier: x2
 Special abilities: Wary (immunity to backstab)
-'Burrow' once per day (hides from enemies)
+Burrow once per day (hides from enemies)
 Lucky
 Empowerment: the familiar receives a level-based, affinity-modified bonus to Saving Throws and Armor Class if in proximity of the master
 

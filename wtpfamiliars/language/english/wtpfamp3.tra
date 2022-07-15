@@ -29,7 +29,7 @@
 @31   = ~"Aahhhh..." The familiar half-closes its eyes with contentment, a pleased smile creeping across its face. "Yes, this is good. Food would also be nice."~
 @32   = ~It looks up with dark eyes, seemingly content to just be near you. It sighs and looks away briefly. "We are connected, you and I. If you are well, so am I."~
 @33   = ~"But I myself have a few insignificant injuries. I am strengthened because you are stronger than I. If you could treat my wounds, it would please me."~
-@34   = ~"But I, myself, am hurt very badly. I bleed, <PRO_MANWOMAN>. I may survive, or I may not... we shall see."~
+@34   = ~"But I, myself, am hurt very badly. I bleed, <PRO_MANWOMAN>. I may survive, or I may not... We shall see."~
 @35   = ~"But since you ask, I am possessed of a craving for food. Procure some for me, and I shall allow you to pet me for a while longer."~
 @36   = ~"But I think you are a good enough traveling companion. I am pleased with the progress we make. Perhaps I shall remain with you for some time to come; we shall see."~
 @37   = ~The small animal seems to ponder saying something else, but eventually its attention drifts and it finds something more interesting than you elsewhere. Walking away, it presents its tail and bum to you.~
@@ -55,13 +55,13 @@
 @108  = ~"*sigh* Very well. Although next time, don't expect such cooperation just from a few seconds of petting."~
 
 // Advice for BG1 in BGT
-@50   = ~The familiar wrinkles its nose in thought. "Try and not get on the bad side of Ulraunt. The Old Buzzard barely seems to tolerate your presence around here."~
+@50   = ~The familiar wrinkles its nose in thought. "Try and not get on the bad side of Ulraunt. The old buzzard barely seems to tolerate your presence around here."~
 @51   = ~"Whoever wants you dead will strike again, <PRO_MANWOMAN>." The familiar rubs its nose with one paw. "We can't let ourselves be caught by surprise when it happens."~
 @52   = ~The familiar shakes out its fur. "I'm sure there is something to be found in these parts. You'd better keep your eyes open, <CHARNAME>."~
 @53   = ~The familiar peers up at you from behind your legs. "Your next move seems pretty obvious to me, <PRO_MANWOMAN>. You just have to find out who wants you dead. And why."~
 @54   = ~"Hmm... " The familiar looks up from cleaning its fur. "Do you know what the Iron Throne is, <PRO_MANWOMAN>? I find politics boring but you might need to make it your business."~
 @55   = ~The familiar scurries excitedly around your feet. "With all these people about, it will surely be possible to gather information, and perhaps a bit of gold as well..."~
-@56   = ~The familiar sniffs the air. "My instincts tell me we should go visit Baldur's Gate. If nothing else to check the Iron Throne headquarters..."~
+@56   = ~The familiar sniffs the air. "My instincts tell me we should go visit Baldur's Gate. If nothing else, to check the Iron Throne headquarters..."~
 @57   = ~"This is all very confusing but I bet those Iron Throne leaders are responsible of many an evil deed." The familiar bares its little fangs. "You must stop them, <PRO_MANWOMAN>."~
 @58   = ~The familiar stares off into the darkness. "It's not safe here, <PRO_MANWOMAN>. Watch your steps."~
 @59   = ~"Sarevok must be stopped, <PRO_MANWOMAN>! Once and for all..."~
@@ -92,7 +92,7 @@
 @80   = ~"Let's see... the wizard is behind all your trials, yes? Then it is easy, <PRO_MANWOMAN>. Find him, kill him, and your troubles are no more. Now will you feed me, yes?"~
 @81   = ~It looks about balefully, its ears folding back against its head in fear. "This... is a place where I am food. I do not like this place. We should go elsewhere."~
 @82   = ~"Hmm, the elven city has the Tree of Life within, <PRO_MANWOMAN>, a wondrous thing connected to all that is natural. You must find the city and the Tree. That is my advice."~
-@83   = ~As it thinks, its eyes glow red with uncharacteristic ferocity. "There is only one solution, <PRO_MANWOMAN>. For you to survive, the wizard must die. That is how it must be."~
+@83   = ~As it thinks, its eyes glow red with uncharacteristic ferocity. "There is only one solution, <PRO_MANWOMAN>: for you to survive, the wizard must die. That is how it must be."~
 
 // Advice for ToB
 @84   = ~The little animal shrugs, bored. "I do not know what advice to give. The wizard is dead, you have your soul... can you not just leave?" It yawns widely. "Maybe build an army. Isn't that what you do?"~

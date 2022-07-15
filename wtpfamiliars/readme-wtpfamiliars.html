@@ -1,397 +1,728 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-
-<head>
-  <title>WTP Familiars</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <link rel="stylesheet" href="backup/bkbg2cpmreadme.css" type="text/css" />
-  <link href="backup/bk.ico" rel="icon" type="image/bmp" />
-</head>
-
-<body>
-  <h1>WTP Familiars v2.6</h1>
-  <div class="section">
-    <p><strong>Authors: Rabain & <a href="mailto:crimes73@fastmail.fm">Salk</a> & <a
-          href="https://github.com/flamewing/WTPFamiliars">flamewing</a><br />
-        <p>(originally intended to be part of the now discontinued World Transition Project)
-  </div>
-  <h2>Overview</h2>
-  <div class="section">
-    <p>This mod introduces an alternative version of the standard Find Familiar
-      spell, opting for a more PnP faithful representation of it.&nbsp; The player will also be able to choose from a
-      pool of three or four creatures (exception: True Neutral mages are restricted to the True Neutral Familiar)
-      instead of being assigned a Familiar based upon
-      alignment.</p>
-    <p>When the spell is cast you will be able to select the Familiar
-      matching your own alignment or one of the Familiars whose alignment is closest to your own. For example, if your
-      alignment is Lawful Evil you
-      would have a choice between the Imp (LE), the Dust Mephit (NE) and the Ferret (LN).</p>
-    <p>The Familiars have now extended dialogue and new icon colors. They will make themselves heard when they feel
-      they've spent too much time in the backpack and their dead has now different consequences for the player: failing
-      the constitution based system shock check (see table under) will render the mage temporarily vulnerable to enemy
-      attacks. Afterwards, a 3 days period of mourning will prevent the summon of a new Familiar. During this period,
-      the mage suffers a -1 penalty to their constitution. When the mourning is over, the mage will regain the lost
-      constitution point and will be able to summon a new Familiar.</p>
-    <p>The mod also introduces a new Familiar (spider) in order to have each alignment
-      represented by a different creature.&nbsp; The spider has been placed in the True Neutral slot and as such minimum
-      bumping has occurred with regard to which Familiar
-      is assigned to which alignment.&nbsp; The new breakdown is as follows:</p>
-    <p>
-      Familiar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Filename&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Alignment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selectable
-      by<br>
-      Rabbit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFLGRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Lawful Good&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      - was True Neutral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lawful Good,
-      Neutral Good and Lawful Neutral mages<br>
-      Pseudodragon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFNGPD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Neutral Good&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      - no
-      change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lawful
-      Good, Neutral Good and Chaotic Good mages<br>
-      Faerie Dragon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFCGFD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Chaotic Good&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      - no
-      change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Neutral
-      Good, Chaotic Good and Chaotic Neutral mages<br>
-      Ferret&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFLNFE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Lawful Neutral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp -
-      no
-      change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lawful
-      Good, Lawful Neutral and Lawful Evil mages<br>
-
-      Spider&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFTNSP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      True Neutral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - new
-      addition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Neutral
-      Good, True Neutral and Neutral Evil mages<br>
-
-      Cat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFCNCT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Chaotic Neutral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      - no
-      change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chaotic
-      Good, Chaotic Neutral and Chaotic Evil mages<br>
-      Imp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFLEIM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Lawful Evil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      - no
-      change&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lawful
-      Evil, Neutral Evil and Lawful Neutral mages<br>
-      Dust Mephit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFNEME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Neutral Evil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      - no
-      change&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lawful
-      Evil, Neutral Evil and Chaotic Evil mages<br>
-      Quasit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      WTPFCEQU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Chaotic Evil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      - no
-      change&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Neutral
-      Evil, Chaotic Evil and Chaotic Neutral mages</p>
-    <p>The Familiar also levels up with the mage, acquiring betters statistics and abilities at different stages</p>
-    <ul>
-      <li>Hit points will increase</li>
-      <li>Saving Throws will improve</li>
-      <li>Armor Class will improve</li>
-      <li>Special abilities will be gained</li>
-      <li>...and more</li>
-    </ul>
-    <p>Detailed information about the Familiar is provided in the Inventory page, by right clicking on the Familiar
-      icon.&nbsp; All Familiars have now a portrait and also a soundset assigned to them.&nbsp; The individual
-      sounds vary for each Familiar.&nbsp; The following sounds are installed:</p>
-    <p>BORED <br>
-      BATTLE_CRY1 <br>
-      BATTLE_CRY2 <br>
-      BATTLE_CRY3<br>
-      BATTLE_CRY4 <br>
-      BATTLE_CRY5 <br>
-      DAMAGE<br>
-      DYING <br>
-      HURT <br>
-      SELECT_COMMON1 <br>
-      SELECT_COMMON2 <br>
-      SELECT_ACTION1 <br>
-      SELECT_ACTION2 <br>
-      SELECT_RARE1 <br>
-      SELECT_RARE2 </p>
-    <p>The Familiar behaves in the same fashion as the standard BG2 Familiars and
-      will follow you from area to area. Each Familiar has a reference class (warrior, thief, mage or druid/mage)
-      that serves as generic guideline for THAC0, skills and saving throws advancement.
-      Familiars have a sense of self preservation and are therefore scripted to jump into the backpack when their health
-      is critically compromised and an ongoing battle is threatening their life.&nbsp;
-      Providing you rest before taking them out again they will heal and memorise
-      their known spells.&nbsp;</p>
-    <p>The system shock table:</p>
-    <p>CON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      System Shock<br>
-
-      1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      25%<br>
-      2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      30%<br>
-      3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      35%<br>
-      4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      40%<br>
-      5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      45%<br>
-      6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      50%<br>
-      7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      55%<br>
-      8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      60%<br>
-      9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      65%<br>
-      10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      70%<br>
-      11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      75%<br>
-      12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      80%<br>
-      13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      85%<br>
-      14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      88%<br>
-      15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      90%<br>
-      16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      95%<br>
-      17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      97%<br>
-      18+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      99%<br>
-
-    </p>
-  </div>
-
-  <h2>Compatibility</h2>
-  <div class="section">
-    <p>This mod is designed
-      to work with Baldur's Gate II: Shadows of Amn with the Throne
-      of Bhaal expansion pack and has been completely overhauled with full Baldur's Gate Trilogy compatibility in mind.
-      It also supports Baldur's Gate II: Enhanced Edition, Enhanced Edition Trilogy, and has experimental support for
-      Icewind Dale: Enhanced Edition.</p>
-    <p> Install this modification after Spell Revisions or any other modification that changes the Find Familiar spell
-      in any way.
-    </p>
-  </div>
-  <h2>Known Bugs</h2>
-  <div class="section">
-    <p>There are a few minor visual glitches (unpolished level up process, spider's green circle's being a bit off,
-      spells' visual effects showing for a brief moment when the familiar leaves the backpack) that I am unable to fix.
-    </p>
-  </div>
-  <h2>Installation</h2>
-  <div class="section">
-    <p>WTPFamiliars is packaged and installed with <acronym title="Weimer Dialogue Utility">WeiDU</acronym> and
-      distributed as a zip
-      archive. To install, simply double-click the archive and extract the
-      contents to your BG2 game folder. </p>
-    <p>You should
-      then have a WTPFamiliar&nbsp; folder and Setup-WTPFamiliar.exe in your <acronym
-        title="Baldur's Gate II">BG2</acronym> folder.
-      To install, simply double-click Setup-WTPFamiliar.exe and follow the instructions
-      on screen. </p>
-    <p>Please run Setup-WTPFamiliar.exe in your <acronym title="Baldur's Gate II">BG2</acronym> folder to reinstall or
-      uninstall this modification. </p>
-    <p>If you are on Linux, you need to have oggenc installed on your system at a place WeiDU can find it. Installing it
-      through your package manager should suffice. </p>
-  </div>
-  <h2>Contact Information</h2>
-  <div class="section">
-    <p>Rabain created
-      this mod.</p>
-    <p><a href="mailto:crimes73@gmail.com">Salk</a> expanded and bugfixed it (hopefully).</p>
-    <p><a href="https://github.com/flamewing/WTPFamiliars">flamewing</a> updated it for Enhanced dition and put it on
-      GitHub.</p>
-  </div>
-  <h2>Thanks and Acknowledgements</h2>
-  <div class="section">
-    <ul>
-      <li>Thanks go to Sir-Kill and Dragonlord for accepting me into the WTP and
-        to Sir-Kill for the new bams/portraits in use in this mod.</li>
-      <li>igi for pointing me in the right direction with spells and some tp2
-        user friendliness!</li>
-      <li>Blackwyrmlair Staff and Members for their support and patience.</li>
-      <li>The various mod site members and regulars who provide invaluable
-        expertise to everyone who asks.</li>
-      <li>(Salk) My wife for her invaluable contribution in creating new portraits,bams and additional dialogue.</li>
-      <li>(Salk) Everyone at Gibberlings3, Pocketplane and SHS that helped me try putting all this together.</li>
-    </ul>
-    <p><strong>Tools Used in Creation</strong><br>
-      <a href="http://www.context.cx/">ConTEXT</a> <br>
-      <a href="http://www.dragonlancetc.com/forums/?board=9"> <acronym
-          title="Dragonlance Total Conversion Editor Pro">DLTCEP</acronym></a> by
-      Avenger <br>
-      <a href="http://iesdp.gibberlings3.net/"><acronym
-          title="Infinity Engine Structures Description Project">IESDP</acronym></a>
-      maintained by igi<br>
-      <a href="http://www.idi.ntnu.no/%7Ejoh/ni/">Near Infinity</a> by
-      Jon Olav Hauglid<br>
-      <a href="http://www.mud-master.com/shadowkeeper/">Shadowkeeper</a> by Mud-Master <br>
-      <a href="http://www.gimp.org/">GIMP</a><br>
-      <acronym title="Weimer Dialogue Utility"><a href="http://www.weidu.org/">WeiDU</a></acronym> by
-      Wes Weimer / The Bigg</p>
-    </p>
-  </div>
-  <h2>Credits and Copyright Information</h2>
-  <div class="section">
-    <p><strong>The original WTPFamiliars is ©2007 Rabain. Version 1.0 and later are released and made public under the
-        Creative Commons BY-NC-SA 3.0 licence.
-        <p>Images used courtesy of:</p>
-        <a
-          href="http://www.amazon.com/Monstrous-Manual-Fantasy-Roleplaying-Accessory/dp/1560766190/ref=sr_1_1?s=books&ie=UTF8&qid=1418470655&sr=1-1&keywords=monstrous+manual">
-          Monstrous Manual 1993</a> <br>
-        <a
-          href="http://www.amazon.com/Monstrous-Compendium-Appendix-Planescape-Accessory/dp/1560768622/ref=sr_1_4?s=books&ie=UTF8&qid=1418470688&sr=1-4&keywords=Monstrous+Compendium+Appendix">
-          Monstrous Compendium Appendix (Planescape)</a> <br>
-        <a href="https://colvillevalleyanimalsanctuary.wordpress.com/2012/03/05/top-10-reasons-to-adopt-a-black-cat/">
-          colvillevalleyanimalsanctuary</a> <br>
-        <a href="http://vegasmike.deviantart.com/art/Imp-129907124"> VegasMike</a> <br>
-        <a href="http://www.brucepearson.net/artist%20profile.html"> Bruce Pearson</a> <br>
-        <a href="http://grouchywolfpup.deviantart.com/art/Rabbit-Realism-148816910"> grouchywolfpup</a> <br>
-        <a href="http://www.myrmecos.net/about-alex-wild-2/"> Alex Wild</a> <br>
-        <p>Partial inclusion of material from:</p>
-        <a href="http://www.spellholdstudios.net/ie/atweaks"> aTweaks</a> <br>
-        <a href="http://www.gibberlings3.net/kit_rev/"> Kit Revision</a> <br>
-  </div>
-  <h2>Version History</h2>
-  <div class="section">
-    <p><strong>Beta Version 0.5 </strong></p>
-    <ul>
-      <li>Initial Beta release (Rabain)</li>
-    </ul>
-    <p><strong>Version 1.0 Beta 1</strong></p>
-    <ul>
-      <li>Complete overhaul of the original modification by Rabain</li>
-      <li>Fixed a number of bugs present in the 0.5 version</li>
-      <li>Expanded dialogue, script and level up dynamic</li>
-    </ul>
-    <p><strong>Version 1.1 Beta 2</strong></p>
-    <ul>
-      <li>Fixed CTD occurance (thanks MadMate)</li>
-      <li>Fixed a dialogue error</li>
-    </ul>
-    <p><strong>Version 1.2 Beta 1</strong></p>
-    <ul>
-      <li>Fixed a bug that would cause a dead familiar to return to the backpack</li>
-    </ul>
-    <p><strong>Version 1.3</strong></p>
-    <ul>
-      <li>First non Beta version</li>
-      <li>The familiar levels up now via dialogue (except when summoned)</li>
-      <li>Fixed a bug that would cause a script to fire more than once (thanks Jarno)</li>
-      <li>Changed the familiars' allegiance from "CONTROLLED" to "FAMILIAR" (thanks Argent77)</li>
-      <li>Added dialogue option to have the familiar follow automatically</li>
-      <li>Additional special ability for ferret, cat and rabbit (thanks Galactycon)</li>
-      <li>The familiars will no longer accept to go into the backpack too soon</li>
-      <li>The familiars' nagging will not knock the player out of a store or inn screen (thanks AstroBryGuy)</li>
-      <li>Corrected a few typos</li>
-      <li>Numerous adjustments of various kind</li>
-      <li>Minor script changes</li>
-    </ul>
-    <p><strong>Version 1.4</strong></p>
-    <ul>
-      <li>Fixed a bug with the wrong use of chapter globals</li>
-    </ul>
-    <p><strong>Version 1.5</strong></p>
-    <ul>
-      <li>Fixed a bug with equipping weapon for a number of familiars</li>
-      <li>Now the familiar leaving after friendly fire will no longer prevent the summoning of a new familiar</li>
-      <li>Attempt to avoid disruption of the familiar's levelling up process</li>
-      <li>Corrected a few typos</li>
-    </ul>
-    <p><strong>Version 1.55</strong></p>
-    <ul>
-      <li>Corrected a typo that'd reset the wrong variable</li>
-      <li>Fixed spell description for the Find Familiar scroll</li>
-    </ul>
-    <p><strong>Version 1.6</strong></p>
-    <ul>
-      <li>Fixed incompatibility with BGT transition script</li>
-      <li>Fixed incompatibility with Game Over Only on Party Dead modification</li>
-      <li>Improved familiars' discontent mechanic</li>
-      <li>Minor tweaks to dialogue and scripts</li>
-    </ul>
-    <p><strong>Version 1.65</strong></p>
-    <ul>
-      <li>Corrected a typo breaking level up dialogue option at level 12</li>
-    </ul>
-    <p><strong>Version 1.7</strong></p>
-    <ul>
-      <li>The familiars will no longer stubbornly refuse to return to the backpack when their or the mage's health is
-        seriously compromised in battle</li>
-      <li>Attempt to avoid having the familiar's nagging ever interrupt the player during combat</li>
-      <li>Fixed minor bug with evil familiars' TOB dialogue</li>
-      <li>Additional dialogue for reputation shift (good aligned familiars will not stay with a villain!)</li>
-      <li>Fixed minor bug with the ferret's and the rabbit's Burrow ability</li>
-    </ul>
-    <p><strong>Version 1.8</strong></p>
-    <ul>
-      <li>All familiars use now their innate abilities instantaneously</li>
-      <li>Introduced new Special Ability for Thief/Warrior class familiars: Empowerment</li>
-      <li>Introduced new Special Ability for Mage class familiars: Spell bounce</li>
-      <li>Wraith Form and Phasing abilities added to Spider</li>
-      <li>Warrior class familiars are now immune to Critical Hits</li>
-      <li>Fixed a bug with the Spider's poison resistance</li>
-      <li>Fixed minor incompatibility with Sword Coast Stratagems</li>
-    </ul>
-    <p><strong>Version 2.0</strong></p>
-    <ul>
-      <li>Included missing Bard, Beast Master and Thief with UAI ability classes</li>
-      <li>Fixed minor issue with party members using the Find Familiar scroll in the quick slot</li>
-      <li>Fixed issue with Empowerment not switching on the fly when Reputation changes would affect it</li>
-      <li>Fixed issue with Empowerment not correctingly updating the hit points gain/loss</li>
-      <li>Fixed issue with Empowerment not removing old bonus before applying new ones</li>
-      <li>Changed Empowerment's visual cue to something less intrusive</li>
-      <li>Alleviated stuttering when Empowerment is being applied to or removed from Thief/Warrior class familiars</li>
-      <li>Raised base thieving skills for cat, ferret and rabbit</li>
-      <li>Changed Burrow ability: the familiar stays hidden until the master recalls him</li>
-      <li>Paralyzed or Intoxicated should now no longer appear on Undead</li>
-      <li>Mage class familiars now cast mirrored spells at the right level (thanks kjeron)</li>
-      <li>Fixed bug with some thieving skill and poison resistance bonuses being erased when the familair moves to the
-        backpack (thanks magus)</li>
-      <li>Small cosmetic changes to the summoning/level up of the familiars</li>
-      <li>The spider's poisonous/paralyzing attack now scales with the enchantement of the weapon</li>
-      <li>The familiars no longer initiate any dialogue</li>
-      <li>Fixed compatibility problems with Game Over only on Party Dead (requires version 1.7 or higher)</li>
-      <li>Updated WeiDU to version 241</li>
-    </ul>
-    <p><strong>Version 2.1</strong></p>
-    <ul>
-      <li>The Burrow ability is now exclusive to the rabbit</li>
-      <li>The Burrow ability is now restricted to Outdoor and Dungeon areas rather than just Outdoor</li>
-      <li>The ferret gains more instances of its War Dance ability to compensate the loss of the Burrow ability</li>
-      <li>A couple of text changes to provide basic information about the Dust Mephit's Glass Dust ability</li>
-      <li>Fixed a typo in the WTFAMPx.d files</li>
-      <li>Minor code changes</li>
-    </ul>
-    <p><strong>Version 2.5</strong></p>
-    <ul>
-      <li>Fixed critical bug with Rabbit crashing the game when asked to return to backpack (thanks Chitown Willie)</li>
-      <li>Fixed critical bug with familiars not levelling up more than once (thanks enkku)</li>
-      <li>Fixed minor bug with empowered familiar not showing the correct name at the end of the dialogue-based level up
-        process</li>
-      <li>The level up process now shows the amount of XP the familiar has gained</li>
-      <li>Updated WeiDU to version 246</li>
-    </ul>
-    <p><strong>Version 2.6</strong></p>
-    <ul>
-      <li>Added support for Linux and OSX by lowercasing all file names and using WeiDU's HANDLE_AUDIO for ogg
-        conversion</li>
-      <li>Enabling experimental IWDEE support</li>
-      <li>A few script improvements</li>
-    </ul>
-  </div>
-</body>
-
-</html>
+<html xmlns=http://www.w3.org/1999/xhtml lang=en xml:lang=en style>
+<meta charset=utf-8>
+<meta name=generator content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+<title>WTP Familiars</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;font-size:12px;text-align:left;color:#000;background-color:#CCFF99;margin:40px;padding:0}h1,h2{font-size:17px;font-weight:bold;color:#006633;font-variant:small-caps;position:relative;background-color:#fff;padding:5px;margin-right:20px;margin-left:20px;border:2px solid #006633;z-index:10}h2{font-size:16px}p,ul,table{clear:left}a,a:link,a:visited,a:hover,a:active{color:#006633;margin:0;padding:0;border-width:0}a:visited{color:#006633}table{padding:20px}td{font-size:11px;text-align:center;vertical-align:baseline;padding:5px;border:1px outset #aaa}.section{position:relative;top:-45px;border:2px solid #006633;background-color:#fff;margin:30px 0 0 0;padding:20px}strong.c19{font-weight:bold}p.c18{font-weight:400;text-decoration:underline}p.c17{font-weight:400}p.c16{font-weight:400}p.c15{font-weight:bold;text-decoration:underline}p.c14{font-weight:bold}span.c13{font-size:11px;text-align:center;color:rgb(0,0,0)}p.c12{font-weight:bold}div.c11{font-weight:bold}table.c10{border-collapse:collapse;width:25%}table.c9{border-collapse:collapse;width:80%}td.c8{height:14.25pt}tr.c7{height:14.25pt}td.c6{width:85pt}td.c5{width:51pt}td.c4{height:14.25pt;width:51pt}col.c3{width:85pt}col.c2{width:51pt}h2.c1{font-weight:bold}</style>
+<link href=data:image/x-icon;base64,AAABAAEAWFgAAAEAIABIfQAAFgAAACgAAABYAAAAsAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP/+/wD+/f8A//z/AP78/wD59/0A//7/AP7+/gD8/fsA///8AP7/+wD9/vwA///+AP/+/wD//v8A/f//APv9/QD9//8A/f//AP3//wD5+/sA/f//APr8/QD9//8A/f//AP3//wD8/v8A/P7/AP3//wD9//8A+fv8AP3//wD9//8A/f//APv9/gD9//8A+/3+AP/+/wD9/P4A/f39AP///wD///8A////AP39/QD///8A////APz9+wD///wA/vv2ANzY1wD///4A//v8AP/+/wD8+voA////AP///gD9/vwA///+AP///gD9//8A+fv7AP3+/wD9/v8A+vv/AP3+/wD9/v8A9fb6AP3+/wD9/v8A+fj6AP/+/wD//v8A+Pf5AP38/gD//v8A/fv7AP///wD//v4A////AP///wD+/v4A////APr6+gD///8A////AP///wD7+/sA////AP79/wD9/P8A+/n/AP/8/wD//P8A//3/AP/+/wD///4A///8AP//+wD///sA///8AP///AD8+vkA//7+APn6+AD9/vwA///+APf49gD///4A///+AP39/QD///8A/Pz8AP3//wD4+PgA/f//AP3//wD2+PkA+Pr7AP3//wD8/v8A+/3+AP3//wD7/f0A/f//APz8/AD9/f0A////AP///wD+/PsA/Pr5AP78+wD//fwA///+AP///gD///wA0c7JAKajmwCMiIMAkYyJAMS/vgD8+PcA///+AP37+gD///4A/P37AP///gD///4A/P7+APz+/wDLzNAAwcLGAP3+/wD9/v8A9/j8AMrLzwCWl5sAl5icAJuangCtrK4Azs3PAP/+/wD//v8A//7/APv4+gD///8A////AP/+/gD8/PwA////APv7+wD///8A////APr6+gD7+/sA////AP///wD//v8A//7/AP/9/wD//P8A//z/APn1+wDX1NYAw8K+ALa0rACop50An5+TAKSjmQC3ta0A2tbRAP///AD///sA///7AP//+gDT080AwL+7AMHAvADRz84A//79AP///gD///4A//38APv7+wD6+voA////AP///wD4+PgA////AP//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af+soYP/fXdk/5CPhf/Nzsz/rrKz/8PGyv+Eh4v/V1ZY/3NydP96eXv/eXt8/36Eif97gYb/e4OD/3uBfP+JioD/k5OH/318eP96eHf/kpCP/3d1dP9aWFf/fHt3/1tZWP90c2//b21s/3Z1cf9vbmr/VlVR/358e/+Afn3/k5GQ/4KCgv9+gYX/m56i/5aZnf+Ji4z/rK6v/6Klqf+rsLP/kJab/7e/xv+8xMv/nKKn/52io/92dHP/iIV9/6Cajf+JgnP/ko+B/3p4bf+Ih33/bm9m/2xuaP+ipqH/nqGf/25xb/9UVVP/nZ6c/6+vr/+9vMD/qqqw/7y9x/+tr7r/sLK9/6Klqv91eHz/j5GS//j6+wD///8A////APr6+gD///8A//7/AP/+/wD+/v4A///+AOTk3gCEgnf/WVVC/2RdQv98c1H/hnxU/4h7T/+ail//n49l/52MZf+omHT/npJ2/5mSg//U0cz/zc/P/7i9wP+Mk5b/X2Rl/32Afv+Bgn7/f4B8/3yAe/+Bh4b/fISE/3V9fP9+g4H/iImA/4iGfv+HhoL/ZWNi/4KAf/+OjIv/f4B+/3h5d/+AgID/fH17/4ODg/+Gh4X/cnBv/3h2df+Mion/pKKh/5+dnP+3t7f/l5ma/6GkqP+nqan/n5+f/6+vr/+ysrL/kZWW/5meof+fpar/tb3E/7G3vP+prq//oJ6d/4OBd/+JgnP/i4Ny/4mEdf+OjIH/k5KI/4eIf/9xc23/lpiS/8vMyP/Cw7//a2pm/0ZEQ/+/vb3/wcDE/7Cwtv/b3Ob/ycvW/77Ay/+ipar/foGF/42PkP/Fx8gA////AP7+/gD+/v4A/f39AP/+/wD9/P4A////AP78+wDY1dAAa2le/1dRPv9nYEX/gHZU/4p+Vv+QgFX/mYpc/5mJX/+hkGn/rJx4/5CDaf+nnpH/zcrG/9PV1f+Wm5z/Ullc/4CIh/+QlpH/kZaN/4yQhf+Gi4L/hIuG/3eAff+FjYz/iI+M/4qLh/+Pj4n/jIuH/25sa/+EgoH/hIKB/3t7e/+np6f/enp6/4aGhv98fHz/h4iG/4OBgP9pZ2b/g4GA/4mIhP+SkY3/hYOC/4SGhv+Fh4f/l5iW/5+gnP98enn/sa+u/56goP+jp6j/lpyh/6WrsP+yuL3/j5OU/5qZlf+tq6H/uLGi/8/I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gv+DioP/foV+/32GfP97hHr/gIp+/4ONgf+DjYH/g4uA/293bf9uc2r/hImA/4OGff+EhoD/io6I/4KGgP+Hi4X/cHVs/3V5bv+JjYH/iYt//3x9c/+IiYD/fX95/4uMiP+foaH/sLG1/7i7wP+vsbn/vL7G/62stf/KzNT/3+bv/8XO2P/K1uL/xdHb/8vU3f/CyM//4uLo/8XBxv8FAAH/gnt+/8W/xP/Nyc//w8LL/5+hqf+Hho//dXR9ALa2vAD6+v8A/f7/AP3//wD//v8A/v3/AP/+/wD//v8A////AP///gD///wAqKWdAHhwY/9wZlT/eGxU/3ttUP+BclH/oZR1/+Le1P/z8e3/8/Lt//Py7v/29fH/9/by//j38//29PH/+Pb0//n39f/39vX/8/Py//Pz8//5+fr/9vb3//3+/v/7+/v/9fX2/+Df3//Bv8D/tba1/5aalf96fnn/eYB5/4KJgv9+hX7/f4eA/4KLgf+Di4H/gYl//4WNg/+Znpn/8/Py/////////////////////////////////////////////////////////////////+zs6/+mp6P/rrGv/7i6u/+LjpL/tLe8/7CzuP+bm6H/xcjN/8fJzv/r7fD/8fL0//r6+//+/v7/////////////////////////////////+fn5/8rL0/+nqbP/kJKa/3l5f/+IiI4A/f3/APn4/AD//v8A//7/AP///wD+/f8A+vn7AP7+/gD9/f0A///+ANjUzwCelYsAcGZU/25iSv+CdFf/hndW/4Z4VP+RhmP/+Pf1///////////////////////////////////////////////////////////////////////////////////////////////////////9/f3/19jX/52gnP+BhYD/f4Z//4WMhf+Ah4D/gomC/3yDfP+DioP/gomC/6Omov////////////////////////////////////////////////////////////r6+v+Xm5T/qq6p/6qvrf+rsK//oKWm/6+0t/+lqq3/sbO2//j4+P//////////////////////////////////////////////////////9fT1/8jGy/+lp7L/paey/5mbo/+JiY//fn6E/76/wwD//v8A/fz+APn5+QD8/PwA//7/AP/+/wD5+PoA////AP35+AD//vkAt7GmAHlxYP93alT/fW9T/31uTv+PgV3/i31Z/8zHt///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2tva/4iMh/+GioX/hoyH/4OJhP+CiIP/hIiD/4CEf/+EiIP/3d7d///////////////////////////////////////////////////////T1tL/aG1k/4GFgP+0urX/wMXD/660s/+QlZb/rbCx//z8/P///////////////////////////////////////////////////////v7+/7u5tv/R0NT/s7XA/6qruf+Mjpb/b291/2xrb/+Qj5P/z87QAP/+/wD///8A////APz7/QD//v8A+/r8AP7+/gD///4A6ubhAKCaj/9sZFP/b2JM/35yVv93akr/gXVT/31xT/+noIf////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////y8/P/mp6a/4qOif+FiYT/h42I/4iMh/+NkYz/i4+K/7i7t///////////////////////////////////////////////////////p6qm/3R7dP+Zn5r/qK+s/6mwrf+2vr3/o6ur//f4+P///////////////////////////////////////////////////////////6Khmv/QzcX/x8fH/7i5w/+lp7L/qqmy/4ODif+Ih4v/dHN3/728vgD7+vwA/f39AP///wD//v8A//7/AP/+/wD///8A//z7ALayrQCHgXb/dW1c/6SZg/+hlHr/koRn/6+igv+wo4P/t62R//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Hx8f+Mj4v/h4uF/4SIgv9+gnz/lpqU/42Ri/+ZnZj//////////////////////////////////////////////////////3t+ev+UmpX/oqmm/7rCwf+qsrL/nqWo/+Pl5v///////////////////////////////////////////////////////////+zr6P/IxLL/zcm+/5ualv+Wlpz/i4qU/6amrP+Af4P/dXR4/29ucv+hoKL///7/AP///wD5+fkA//7/AP/+/wD7+vwA////AM/LygCOi4MAeXNo/4+Hdv+ckXv/mYxy/4V3Wv+ilXX/qZx8/62igv/////////////////////////////////////////////////9/fz/1M/O/8zHyP/g3eH/6+rx/9fX2///////////////////////////////////////////////////////1NTS/4uPif97f3n/Zmpk/4SIgv+AhH7/iIyG//////////////////////////////////////////////////////+0ubf/v8bD/6iwr/+fp6f/kZec/8HFyf////////////////////////////////////////////////////////////////95dWP/0s62/9vWx//Bvbj/trO1/7q4vv+joqb/oaCk/5CPk/9zcnT/sbCyAPz7/QD+/v4A////AP/+/wD5+PoA////AP7//QCem5f/Y2BY/2VfVP+AeGf/f3Jc/2VZPf9/cVT/iHtb/3ptTf95bk7/////////////////////////////////////////////////+fb1/4+Dff+tpaX/1tHT/8nFyv/X193/xcbI//////////////////////////////////////////////////r6+v+Bg33/naCX/4qPhv+MkYj/gYZ9/4qPhv//////////////////////////////////////////////////////pqyr/5ykpP+aoaT/qbK2/7i/yP/y8/X////////////////////////////////////////////////////////////l49v/U08z/4J9ZP/n4M//4NnQ/9zX1v/Au73/lpKX/4eGiv95eHr/jIuN/7u6vAD///8A////AP7+/gD8+/0A/fz+AP///wDZ2tgAhoN//1JQRv9dV0r/amNQ/29jS/+Rg2f/va2Q/7Wmhv+klXX/s6aG//////////////////////////////////////////////////f18/+LgHj/qqGd/9rV1P/V09P/rq2v/8DCw//39/f/////////////////////////////////////////////////qqym/42Qh/+MkYj/iI2E/46Tiv+Ok4r//////////////////////////////////////////////////////5qiov+RmJv/qbG4/5+mr/+9wMb////////////////////////////////////////////////////////////5+Pf/lZB9/3p1XP+Be2T/ZV5N/8S+s//Sycb/xL6//6+srv+Eg4X/g4KE/6Sjpf/8/PwA+/v7AP///wD///8A//7/AP/+/wD///8AxsfFAHx5dP9PTUP/aGFS/3FoVP99b1j/hXda/5uMbP+wn37/tKOC/7Kjgv/////////////////////////////////////////////////o5uP/qaGU/9HLxP/h3dj/v766/4eIhP97f3r/19vX/////////////////////////////////////////////////7/Avf+EhoD/YGVc/36Dev+FioH/lJmQ//////////////////////////////////////////////////////+YnqP/rbW8/6SrtP+3vMb/+vr7////////////////////////////////////////////////////////////vbqz/6qmlP9BPSr/gXto/2NeT/9zbWL/gnl1/5WNjf+vqqv/qaao/6moqv/S0tIA////APz8/AD///4A+Pn3AP79/wD///8A/f39ANna2ACJhoH/VVNI/2tkU/95cVr/hnlf/4t7Xv+Leln/mYll/6OQb/+djGv/////////////////////////////////////////////////7ezp/5ONgv+9urL/nJmV/6yrp/+praj/2+Lb/52jnf/////////////////////////////////////////////////Ozs3/fX95/5KWkP+MkIr/iY2H/3+Dff//////////////////////////////////////////////////////maGn/6qxuv+qsLv/6Ort////////////////////////////////////////////////////////////rq6u//Px6f/+/PH/iod5/7i1p/+wrKH/XVhP/19ZVP9CPTr/bGdo/7GusP////8A+vr6APv7+wD///8A///+AP///gD8/v4A+/39AP39/QD9/voAoqCYAGNhVv9mX07/dm5X/39zV/+Sg2P/lIFe/5qIY/+fi2j/nIlm//////////////////////////////////////////////////f29f+3s67/tbOy/5ubm/+Fh4j/ub69/7a9uv+9xsP/////////////////////////////////////////////////2NjY/5CRjf+AhH//foJ9/4yQi/90eHP//////////////////////////////////////////////////////7/Fzv+iq7X/0NTc////////////////////////////////////////////////////////////8fHx/4qLif+amJf/xcTA/4WEgP+5uLT/x8TA/6mmov+OiYb/j4uK/1dVVf+opqb//vz8AP///wD///4A+/z6APf49gD///4A/f//AP3//wD+//0A///8ALy6sgBzcmT/aWNQ/3xyWv+OgGP/loVk/5iGYf+plnD/r5x3/6eUb//////////////////////////////////////////////////z8vL/0c7Q/9za4P/LytP/0NLa/8nM1P/V2+D/xMzP/////////////////////////////////////////////////8rKyv9/gH7/eHp6/3+CgP+LjY3/l5qY//////////////////////////////////////////////////////+wuML/vMTO/+7v8f///////////////////////////////////////////////////////////6Wmpf+9vrz/vL6//77Awf/X2Nz/sLG1/769v/+2tbf/pqSk/6Ohof+OjIz/hYOD/8LAwAD7+fkA///+AP///gD///4A/v/9APz+/gD9//8A+vv5AP//+gDc29EAfntt/2pjUP9/dV3/iXxc/5qKZv+lkmz/qJRr/6eSbP+nlG7/////////////////////////////////////////////////8/T0/8rI1P+9vMz/y8re/8XG2v+lprr/w8fZ/9LZ5P/////////////////////////////////////////////////Fxsb/nqCg/4SGh/9+gID/iIqL/4aIiP//////////////////////////////////////////////////////tb7H/9DV2v///////////////////////////////////////////////////////////+jo5/+ur6v/oKKi/6Snq/+4u8P/oaOt/42Sm/+Ul5//m56j/7S2t/+Ulpb/joyM/z07O/+enJz/yMbGAPv5+AD///4A/f78AP7//QD8/PwA////AP///gD///wA///5AIeEdv9pX03/f3RZ/5WIaP+bi2f/ppNw/6+deP+yn3z/taJ///////////////////////////////////////////////////Pz9P/Hx9X/xcXX/8zL3/+ur8T/wcLX/7/D1v/h5e7/////////////////////////////////////////////////k5WZ/4eKj/9qbXL/en2C/3F0ef+Hio7//////////////////////////////////////////////////////7zDzv/6+vv///////////////////////////////////////////////////////b29v+tr6r/w8TC/8jKyv/Ex8z/t7nD/5qeqf+/xdL/y8/a/8PI0f+qrrP/vL/D/4yLjf9YWFj/W1lZ/6mpqQD///8A///+AP3+/AD///4A/vz8AP///wD9/P4A/Pz8AP///ACFfnX/bmJQ/3xsVf+olnn/rJp9/6iafv+2qIz/uKmP/7qskP/////////////////////////////////////////////////t7e7/g4SO/5WVof+ZmaX/mJmn/8DBz/+vssD/+fr7/////////////////////////////////////////////Pz9/2Jodf9fZXL/h42Y/4aMl/+MkJv/5Ony///////////////////////////////////////////////////////k5uv////////////////////////////////////////////////////////////CxMX/vcHC/7u/wP/KzdH/wsbL/66xuf+/xM3/vsPM/77Ez//CyNP/t73I/5Saof+JjJH/dHZ3/1RTVf+vsbEA+/v7AP3//wD7/f0A/f//AP/8/QD//f0A//7/AP/+/wD///4AgHhx/3VoWP+Id2L/nYxy/7upkv/Bs6D/tamX/6qgjv+4rZn/////////////////////////////////////////////////9PT2/7K0vP+pq7P/m52l/6yvt//GyNL/5ufr/////////////////////////////////////////////////+7x9v/Ey9z/wsna/8fO3f/M0+L/z9Tj/8bM2f/////////////////////////////////////////////////////////////////////////////////////////////////////////////////t7/H/x8rS/7e7wP+0uL3/v8PI/6Wprv/Dx8z/vMLJ/7q/yP+/xdD/yc/a/5yir/9wdoH/Z2pv/35/g/9+gIH/yMrLAP3//wD6/PwA/f//APv9/QD///4A////APf5+gD6/PwA1tTTAH54cf9sYVP/j4Fv/6KTgP+jk4L/cmZa/2hfVf+DfHP/f3Zs//////////////////////////////////////////////////Pz9f+wsrz/sbO9/6mstP/LztT/6ers//////////////////////////////////////////////////z8/f/Dytn/ucHS/7nB0v/J0eL/rLXD/77F1P/Bydb////////////////////////////////////////////////////////////////////////////////////////////////////////////8/P3/wsXO/7e8xf+5v8b/v8LK/8zP1/+rrrb/ur3F/8nO1//HzNX/wcXQ/7rAzf+XnKv/naGs/3V4ff+HiIz/yszNAPb4+QD9//8A/f//AP3//wD9//8A///+AP3+/AD9//8A9/z7AM/QzgB/e3b/bmZZ/4Z5a/+cj4H/i39z/9LJxf/GwcD/5ePj/9bR0v//////////////////////////////////////////////////////+/z8//r6+//+/v7///////////////////////////////////////////////////////z9/f/T2eX/vMTV/7nB0v+2vs//ucHS/7O7zP+6wdL/usHQ////////////////////////////////////////////////////////////////////////////////////////////////////////////y83V/6msuv+prbj/t7zF/7a4wv+8v8f/sLO7/8LFzf/N0tv/w8fS/7e6yP+5vMr/mp2s/5ufqv+SlZr/t7i8APb4+QD9//8A+vz8AP3//wD6/PwA/f//AP///AD4/PcA+///APr//gDNzswAfnt2/25nXv+Jf3X/joR6/4B3c//c2dv/4N/o/8zO2P/Nz9r///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Hy9f/EzNf/ucHS/8DK2/+0vtD/tb/R/7vF1/++yNr/ucDT/8HJ2v//////////////////////////////////////////////////////////////////////////////////////////////////////7e7y/6uvwf+rsL//qq27/7S4w/+3ucT/vb/J/66wuv/KzNb/wMLN/77Ay/+4ucf/s7TC/5GSoP+UlqH/kZSZ//3+/wD9//8A+/3+AP3//wD7/f0A/f//APr8/AD///sA+/z4APb7+gD7//8AyszMAH18eP9lX1j/ioN6/2tjXP+1sK//29rj/7/C0P+2vc7/u8LV////////////////////////////////////////////////////////////////////////////////////////////////////////////7vDz/8fN1P+vuMX/r7jF/73H2P+yvM3/xc/h/6Wvwf+ossT/ucPV/7/J2/+2wNL///////////////////////////////////////////////////////f4+f///////////////////////////////////////f39/8LH1v+qrsD/rrLE/8TH1v/DxtT/xMbR/8zO2f/P0dv/qau1/8nL1f/Q0t3/x8nU/7S2wf+VlaP/o6Su/4mJj//9/v8A/f//AP3//wD9//8A/f//AP3//wD9//8A///8APv5+AD9//8A+///APb4+ACNi4r/cWtm/3dvaP+Gf3z/0M7O/8XH0f+utcb/t8LW/8XQ5v//////////////////////////////////////////////////////////////////////////////////////////////////////+fn6/9LX3f+wusT/wMnW/7G6x/+nscL/rrjJ/6+5y/+yvM7/mqW5/6Svw/+3wtb/tsHV///////////////////////////////////////////////////////Gy9j//f3+/////////////////////////////////9zf5/+nrsH/o6q7/6Wsvf+fpLP/r7LA/6qst/+dn6r/z9Da/5CRm/+4ucP/xMXP/6Chq/+srbf/joyY/2xrdf9/f4X/yMnNAP3//wD9//8A9vj4AP3//wD2+PgA/f//AP/+/QD///4A/P7/APz9/wD//v8AramoAH13cv9uZl//kImG/8XCxP/Axc7/ucHS/8XS6P+jscj//////////////////////////////////////////////////v7+/+rt7//u8PL//v7+////////////////////////////////////////////7/Hy/7vCzf+wucb/p7LA/7S+z/+3wdP/s73P/7rF2f+xvND/tL/T/7rF2f//////////////////////////////////////////////////////vMPU/9XZ4//////////////////////////////////5+fv/tbzL/4WMnf+LkqH/mJ2s/7a8yf+foaz/wsTO/8nK1P/Dxc3/nJ6m/83P1/95eIH/n56n/6CfqP93dn//c3N5/7/AxAD8/v8A/P7/APz+/gD9//8A+/39APz+/gD//v8A//v8AP/+/wD//v8A/fr8ANbR0ACdlJAAjIJ7/2xmYf+xr6//wMbN/77H1f+uvM7/nKu+//////////////////////////////////////////////////r6+/+Qm6P/l6Go/6+2uf/3+Pj////////////////////////////////////////////6+/v/uL/J/5yls/+3wM7/pa/A/6Wvwf+5wtb/wMnd/5ijt/+Ai5///////////////////////////////////////////////////////7m/0f+wtsn/5+nv//////////////////////////////////L09v+zu8r/tr3M/8jN3P/Eytf/y83Y/8fJ0//Mztb/3N/k/8PDyf/KytD/x8fN/8vL0f+sqrD/qKas/4qLj/+trrIA/f//AP3//wD8/v4A+/39AP3//wD7/f0A//v8AP/+/wD8+P0A//v/AP/+/wD+9vYAs6miAIyBef92bmf/zsvH/8LGy/+0vsj/qrfH/77N3f/////////////////////////////////////////////////6+vv/lJ6l/4KLj/+YoKD/wcbF//////////////////////////////////////////////////T19v+fp7T/qrPB/6WuvP+3wdL/ucPV/6y1yf+3wNT/nai8//////////////////////////////////////////////////////+1vMz/sbfK/6+zx//19vn/////////////////////////////////5+rt/7zE0P+3vcr/sLbB/7q8xv+lqLD/0NLa/7e6v/+qq6//s7S4/7u8wP+/wMT/i4qO/6WkqP+Gh4v/nJ2h//z+/wD9//8A/f//AP3//wD7/f0A+/39AP/6/QD//v8A/vr/AP/8/wDv6uwA0srKAJiNhf+NgXf/enBm/5iSi//W2Nn/sLi//7C6xP+vvcn/////////////////////////////////////////////////+fn6/3Z/g/98hIT/foSD/5qhnv/6+vr/////////////////////////////////////////////////y8/X/7a+y/+qscD/rLTF/7K6y/+0vtD/qLLE/6Wvwf//////////////////////////////////////////////////////vMDR/8rR4v+4vtH/u8DP//39/v/////////////////////////////////j5uv/vcPQ/5uhrP+ytL7/k5ae/8PFzf+enqT/qKmt/8TFyf+joqT/n56g/46Nj/+Eg4X/m5yg/5qbn//9//8A+vz9APr8/AD9//8A+vz8AP3//wD/+/4A//3/AP/+/wD//v8Ay8bHAIqDgP96cGb/k4Z4/4t/c/+jnJP/wcLA/5ifov9LVF3/yNPb//////////////////////////////////////////////////r6+v+FjY3/cnh3/3N4dv9qb23/5ufn/////////////////////////////////////////////////7u9wv+0usX/pKq3/7C3xv+0u8r/wcna/5+muf+uuMr//////////////////////////////////////////////////////6uuvP+anrD/rbHD/8nP4v/V2OP//////////////////////////////////////9rd5P+fo67/ycvW/9LU3v/Pztf/w8PJ/8fHzf/S09f/sbC0/8HAwv/Lysz/mJeZ/5manv+YmZ3//f//AP3//wD9//8A/f//AP3//wD9//8A//7/AP77/QD9/v8A+Pr7AKWjogBsZmH/dm1g/4l8bP+kl4n/mZCG/8vIxP9UWFn/eX+G/7jAx//////////////////////////////////////////////////5+fn/eH17/5SYk/+Hi4b/dnp1/9/g3/////////////////////////////////////////////////+UlJf/naKr/7K2wf+jqbb/hYyb/56ntf+yusv/ucPU///////////////////////////////////////////////////////S0uD/wcTT/7m9z/+3vs//srnK/+bp7f/////////////////////////////////+/v7/3N/m/8fJ1P/GyNL/xMPN/8LByv+5uMH/xMTK/9PS1v+6ub3/nJuf/6uqrv+am5//ra6y//j6+wD9//8A+fv7APr8/AD9//8A/f//AP///wD///8A+v7/APv9/gCJh4YAYFpT/3xzZv+ViHj/vK+f/6Sbjv+JhoL/lZeY/6qus/++xMv/////////////////////////////////////////////////+fr6/4yQi/+Qkoz/iYuF/5SWkP/29vb/////////////////////////////////////////////////nJ6g/7/Cyv/Awsz/ub3I/73D0P+epbT/j5an/8fP4P//////////////////////////////////////////////////////paax/7W2xP/Lzt3/tbrJ/7G4x//ByNT/9vf5//////////////////////////////////z8/f/Q0Nv/wcHN/727x/+8u8X/yMfR/8/O1//OzNL/09LW/8nHzf+Tkpb/MDE1/2lqbv+6vL0A+fv8AP3//wD9//8A+vz8APr8/AD6/fsA+v/+APr//wD7//8AjY6KAGNhV/+GfW//o5eF/7qtnf+vppn/oZyZ/7Gwsv+rrbX/srW9//////////////////////////////////////////////////n5+f9+gHr/g4R7/4OEe/+8vbn//////////////////////////////////////////////////////9bY2/+5vcL/t7rC/4+Unf+yuMX/rLTB/5ifrv/L1OL//////////////////////////////////////////////////////8PDzv+Sk6H/q669/8zR4P/K0eD/xc3a/8nQ2v/9/f7/////////////////////////////////+vr7/8fH0//b2Of/2dfj/9PS3P/My9T/0dDZ/9DQ1v/KydL/oaGn/x0eIv9ERUn/h4mK/8XHyAD8/v4A/f//APz+/gD7/f0A/f/+APv//wD6//8A+///AKGioABraWH/e3Nm/3dtXP96blz/npWH/8nCuf+PjIj/n56g/9HR1//////////////////////////////////////////////////5+fn/hoiC/5WYkP/FxsL//f39//////////////////////////////////////////////////f39/+Ok5T/tru+/7K2u/+boKn/qq65/6iuu/+qsL3/l56t//////////////////////////////////////////////////////+lprH/uLrF/5icp/+hpbD/4Obz/87U3//Dy9j/19zj///////////////////////////////////////09Pf/mpqo/4GBj//FxdH/vr/J/5eYov+bnaX/ra+3/7/Byf9HR03/REVJ/3d4fP+Ympv//f//APj6+gD9//8A/P/9APv7+wD9//8A+vz9AP3//wDKysoAkpGN/3ZxaP+AeWr/j4Vz/5GIdP+/taP/pp6R/6+spP/c2tn////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////K0M7/tL+9/623t/+7xMj/uL3G/66yvf+Vm6b/pKq1/621vv//////////////////////////////////////////////////////2d7m/56kq/+pr7b/h42U/5GWn//N0dz/zs/d/7/Azv/v8PT//////////////////////////////////////+Pj6P+ys8H/u7/K/7zByv+6v8j/qq+4/6yyuf+Mj5f/pKes/6GkqP93eHz/kJKT/////wD///8A/f78AP///AD///8A+vr6APz+/wD9//8A+/v7AMvKxgCgnZUAenVm/5CHc/+il4H/pJmD/6Oahv+knpH/qqii///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Q1NP/q7az/6i1s/+ns7P/tL3B/7K5wv+/w87/nqKt/52hrP/W2uH//////////////////////////////////////////////////////9bc5P+xur7/sri9/+Dm6/+GiZH/oKKs/9HR3//a2uj/0NHX////////////////////////////////////////////5OXs/8XI1v/CyNX/vsLN/8jM1/+4vcb/m6Cp/6eqsv+Eh4z/gYKG/6Cio//6+fsA////AP///gD///wA////APz8/AD7/f4A+/3+AP///wDu7ekAyca+AI+Ke/+If2v/m5F5/7yymv+JgGz/jIR3/+Hg3f////////////////////////////////////////////////////////////////////////////////////////////////////////////39/f/Y3Nr/pq6t/624tv+cpqb/ucLF/6uxuP+1usP/sbO+/6equP+go7H/7vDz///////////////////////////////////////////////////////b3uT/yc/U/6ywtf/P1Nf/qq2y/6iqsv+oprL/uLnD/9HT1f/////////////////////////////////////////////////c3Ob/xsnY/8fH1//Hx9f/wcHR/5OUov+YmqL/hIeM/5GUmP/S1NUA//7/APv7+wD///4A///+APz8/AD///8A/f//APv9/gD4+PgA4uHdAK+towB+eWr/gnll/52Te/+1q5P/s6uU/6qlmv/+/v7//////////////////////////////////////////////////////////////////////////////////////////////////////+zs7f+ztrf/pq6u/56mpv+4wsL/tr/C/6y1uf+1u8L/xMbQ/6+xvP+xssD/zs/X////////////////////////////////////////////////////////////9/f5/8vR1f+5vcL/wsfK/7W4vf+doKX/mpmj/4CCiP/7+/z//////////////////////////////////////////////////f39/8vL2P+qqrz/qqq8/6imuf+Yl6f/g4SO/5mcof/Gyc4A8fT4AP3//wD5+fkA////AP78+wD7+/sA////AP3//wD9//8A////AMzJxQCFgHcAbGVU/4p/af+bkHX/sqeM/9HHtP/29fT////////////////////////////////////////////////////////////////////////////9/f3/9vb2/+/w7//c3dz/3d7d/5udnv+IiY3/lpmd/4+Wmf+SmZz/gouP/5acof+yuL//vb/J/62vuf+lpbH/wcHJ//39/v/////////////////////////////////////////////////////////////////z9PX/u7/D/5+ipv+ys7f/sLC2/7Cus//29vb////////////////////////////////////////////////////////////4+Pn/u7nJ/5eVqP+WlKf/oaCw/4eJk/+bn6T/+fz/APn8/wD9//8A/f//AP///wD///8A////AP7+/gD6/P0A/v3/AP///wCzsKwAamVc/2VeTf94bVf/nJF2/6ecgf++tJz/xb2s/3NtYv+cl5T/gH59/4qLif+Ag4H/fYF8/3l9eP98gHv/foJ9/4SIgv+JjYf/kJSO/3d7df9na2X/iY2H/32BfP+FiYT/nJ2Z/5OUkv+Iiov/nJ+j/5OWmv+Fio3/m6Gm/5edov+Rl5z/iYyU/6Cjq/+jpa3/u7rE/8C/yf+6uMT/v7/L/9DQ3P/DxdD/vL/N/8rQ3f+8wdD/wsfW/7zA0v+5vs3/wsjV/8PJ1P/EydL/sri9/56hpv+sr7P/x8jM/7i5vf+8u7//o6Op/4uPlP+iq6//u8HI/7zCyf+iqK//pKaw/8DCzf+5u8b/u7zK/7y9y/+wsb//uLjI/7i4yP+0tMT/ioqa/4WGlP+ChI7/foGJ/8fKzwD7/v8A9vf7APr8/QD49/kA/v7+AP39/QD///8A/v3/AP79/wD///8AwL25AHVuZf9kXEv/h3tj/42BZf+Th2v/qp+E/72zof+Ti37/q6Wg/356ef+Gh4X/goWD/4uPiv+bn5r/jpKM/4qOiP9xc23/cHJs/46Qiv9zdW//goR+/4WHgf9zdW//k5WP/6Ginv+Sk5H/nZ+f/6isrf+xtLj/wcbJ/6yyt/+zub7/trq//6CjqP+kpKr/s7G3/6mlqv+3s7j/ysbM/727wf+5tr//kpOd/5ibqf+yt8b/vsPS/7i9zP+orbz/qa69/6asuf+yuMP/sba//5ieo/+oq7D/pKer/7W3uP+5u7z/vr2//6mqrv+anaX/ztPc/7K0vv+7vcf/t7nD/6yuuf+3ucT/v8HM/6qst/+YmqX/trjD/7Czwf+tsL7/rK+9/5uhrv+CiJP/ioyW/4KFjf+NkJj/+f3/APv+/wD6/v8A/f//AP3//wD8/PwA////APv6/AD///8A////AP779gCzraIAjoZ1/4J2Xv+aj3H/lYps/6yhhf+too7/r6iZ/5mTjP+EgX3/goOB/3p9e/+Pk47/h4uG/4WJg/9/g33/dnhy/3R2cP+Bg33/dHZw/4yOiP+HiYP/g4V//4iKhP+foJz/lJWR/5WXl/+anJ3/xcnK/7vAw/+6v8L/zdLV/8LFyf/V19j/t7a4/9PR0f+loKH/dXBv/5WQkf+wq63/p6Sm/6+ts/+qrLf/qK67/8zP3f+epLH/mZ+s/62zwP+gprP/vsTP/5qfqP+qrrP/tbi9/6Snq/+goqP/pqip/5ycnP+wr7H/hoaM/6Kk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wv/r4+P/mo+L/4+Bdf+zpY//oI90/7KhgP+xn3r/rp56/6mZdf+voH//qpl4/7Geff+5poX/r5x5/6ubd/+mlnL/o5Nv/6aXd/+pmXz/opJ7/62ch/+9rJn/rZ+J/8Kym/+0qIz/pJZ5/56Rcf+ikHH/pZJx/5SBYP+fimr/r5p6/7ijg/+nknL/qpV1/66Zef+plXb/rJp7/8e1mP+3pov/uaqQ/8S3nf+soY3/jIR3/3BqY/9va2b/y8fCAP///AD//v0A///+AP///wD9/v8A/f7/AP///wD///wA09HHAIJ9bgBrYk7/d2xR/4R3V/+Oflr/lIJd/5iGYf+fjGn/ppNw/6ybev+zo4b/qZmC/52Pef+ajHb/uKuV/7eslv/OxbH/kIl4/8rFtv9raV7/hoR8/39+ev+Qk5H/io+O/4KIh/95f37/hYuK/5OWmv+Gh4v/fXyA/6uoqv/Evr//39bS/7Knn/+hlIT/uauV/5eGa/+9q4z/pJRw/6OTbv+zpH3/n5Nr/5uMZf+aiGP/qZZx/62adP+ol3D/p5dt/6STbP+mlW7/sJ16/6WScf+VgWL/mYRo/6ORdP+hjW7/qJd2/6CNav+ei2j/oI1o/6OQav+kkWv/oo9p/6GOaP+jkGr/pJNs/6WTbv+ejGf/pJFu/6aVdP+olnf/rpx9/6+fgv+jknf/jYFp/46Gdf98eWv/iIZ8/9PQyAD///wA/fv6AP/+/wD9//8A+/7/APz9/wD+/PwA///6AL+7sABrZFP/Y1tE/4B1Wf+Helr/joBc/5OBXP+Ug1z/m4hi/6KPaf+ql3H/tKF8/7ilhP+wnn//w7GS/7ytjf+soYP/vLGV/8O4ov+Oh3T/t7Gk/1pYTv+JhoL/iouJ/5iamv+fpKP/bnNy/4+Ulf+Ag4f/fH+D/9PS1P/i3d7/49zZ/8zDuv+hloj/rJ6M/52Ndv+aiW7/t6WG/6iYdP+klG//o5Rt/5qOZP+ilGr/o5Jr/6OQav+hj2b/n45j/56NYv+gj2T/noxj/5mGYP+dimX/o49s/6OObv+Ld1T/oo5r/5aDXv+Sf1r/oI1n/52JYP+gjWL/oIxj/56LYP+cimH/nYxh/56MY/+djWP/oZBp/6GPav+kkW7/ppV0/6mYd/+nlXb/pZN2/56Rd/+Gf2z/e3hp/5qYjQD///kA///7AP///wD9/P4A/f7/APf2/wD9/f8A//7/AP///ACtpp0AYlpJ/2VaRP96blL/iHxa/41/W/+RgFn/kIBW/5WDWv+aiF//oI5l/6iVb/+vm3j/t6KC/7Geff+ci2r/pZZ2/8C1l/+uo4j/lo53/+ffzv/Ry8D/mZOM/5SRjP+ioZ3/jI2J/62uqv+Jioj/yMrK/93d3f/JxcT/ysbB/8rDuv+GfXD/h3tp/7aokv+8rZP/t6eK/6aVdP+YiGT/nI9p/5aKYv+Shl7/l4hh/5yLZP+ZiGH/m4th/5mJXv+UhFn/mYle/5yMYv+Ug1z/nIpl/5B+Wf+ah2T/nIlm/5mGY/+cimX/oI5p/56LZf+ciV7/nIlc/5yJXv+ciVz/nYpf/5yMXv+ci2D/m4pf/5qJXv+cjGL/n45n/5+NaP+ciWb/loVk/5eGZf+UiGz/gXpn/3p3af+2tKkA///5AP/+/QD5+fkA//7/AP3+/wD8+/8A//3/AP77/QD/+vkAnZaNAF5VR/9nXEb/dGlN/4R3V/+Lflj/jX5X/49/Vf+Sglj/k4NY/5aFWv+cimH/q5Vx/6WPbP+hjWr/sJ16/6uaef+klXX/raGF/5eLc/+hl4X/5NvN/+LZz//f2tH/uLKr/5KPh//Avrb/1NLK/6yspv/Avbj/3drS/7y1rP+Tin3/iH5t/7irlf+zpoz/qJp9/6iZef+VhmX/lohk/5+SbP+Zjmj/mItl/5iLZf+Pf1r/lIVe/5qKYP+WiV3/lIRZ/5SHW/+aimD/mIli/5B+Wf+Tg1//l4Rh/56Oav+QfVr/l4di/5aEX/+ZiV//mole/5uIW/+Zhln/moda/52KXf+fjF//nY1f/5yMXv+ZiF3/oI9k/5+OZ/+WhV7/kX9a/5OAXf+RgF//hXpc/3RtWv+MiXv/y8m/AP//+QD///4A////AP38/wD7/P8A//v/AP/8/wD++v8A///+AKKclQBeVkkAX1ZC/3JnTP9+c1P/hXlV/4h7Vf+LfVP/joBW/4+BV/+RgVb/loZc/5J/Wv+mkG3/mIVg/5yKZf+mlnL/oZJx/6WXev/BtJr/nY98/4V4aP91aV3/kol//5qRiP+Zkon/hYF2/3t3bP+Zl43/q6ad/7Suo/+Wj4D/iH5s/72ynP+mm4D/o5h6/6WYeP+glHL/nJBu/5yQbv+Xi2n/j4Vj/4t+Xv+Ed1f/jH5a/5GFXf+Rglv/joJY/5aIXv+RhVv/joBW/4+DW/+Sgl7/l4hn/5OCYf+LfFv/kH9e/5aIZP+Xh2L/koNc/5eGW/+Wg1b/kYFT/5KCVP+VhVf/l4dZ/5iIWv+YiFr/mIhd/5qKX/+VhF3/j35X/45+Wf+UhF//kYFd/4F2WP9waVb/j4x+/9DOxAD///sA//79AP///wD//v8A/fz/AP76/wD++/8A//3/AP/6+wCRi4YAV1FGAFdQPf9jXEP/dmtP/3pxUP9+ck7/f3RO/4Z5U/+He1P/iHxU/42AWv+QfVr/kn1d/6CNbP+jkG3/nItq/6ucfP+ThWn/pJZ//6udiv+gk4P/mY6A/351aP9/dmz/mpGH/5+Zjv+xq57/kIp//5eRhP+XkIH/jIRz/6eeiv+dk3v/mY5y/5eMbv+glXX/lYpq/5eMbP+LgGL/fXJW/4B1Wv+Lf2f/in9k/4N4WP+Gelb/hHhU/4h9V/+Nglz/iX5Y/4Z6Vv+Lf1v/hHdX/4V3Wv9+cFP/iXte/4N1WP+Ddlb/hnpY/5KFX/+QgFb/jn1S/4p6T/+Le1D/jX1S/49/VP+Pf1T/kIBW/5GDWf+LfFX/iXlU/5KCXf+Zi2f/mIpm/4x9XP98cFT/cmxZ/3h2a/+9u7MA///7AP37+gD7+fkA//7/AP/+/wD8+/8A//3/AP76/wDUz9AAZGBbAERANf9MRzj/VlE8/2RdRP9pYkf/b2VH/3FoR/91bEv/dWxK/3VsSv95bk7/iHhb/3xsT/+EdFf/i3te/5aIa/+Ogmb/p5qA/5SHcf9/c2H/hntt/4p+cv+GfHL/hHty/3lwZv9/dmz/gHpv/4F7cP+Jg3b/iYJz/4+Idf+Tinb/k4lx/4d+Y/+HfGD/gXdZ/4V6Xv+Lgmf/fHJa/3NrVP97cV//npaFAKyikACJf2f/d2xQ/3ZrT/9/dVf/fXNV/3xzUv99c1X/eW5S/3pvVP90aFD/Wk42/21hSf98cFj/fXJX/3NoTP99clL/g3VR/4NzTv+BdE7/g3ZQ/4V4Uv+FeFL/hnlT/4d5Vf+Ielb/hHVU/4R4Vv+ShmT/oJNz/6CTc/+Rg2b/fXRZ/2llU/9paV3/lZOL/////AD///4A////AP38/wD//v8A/f3/AP3+/wD//v8A0tDPAGZjXwBDQTcAQT4w/0hFNv9VTzz/W1ZBAF9ZQgBkXUT/Z2BH/2VeRf9hWkH/YVpB/2lcRv9zZlD/c2dP/3ltVf92alL/gHZe/3twXP+Bd2X/enFj/3huZP+0q6IAxLuy1YmBetVnX1j6ZV5V/2tkW/9xamH/bWdc/2ljVv+Bemn/fHVi/25nU/9zbFP/d3BX/3VuVf92blf/bWZS/2liUf+IgXL/o52SANfQxwDg2s8AnpaF/29mUv9kW0f/c2tU/25nTv9waVD/bWVO/1NLNP8rIQ//MykX/15UQ/9IPi3/JRsJ/ywiEP92bVn/cGZO/3drT/92a0v/eG1N/3xxUf9/dFT/f3RW/390Vv+Adlj/e29T/3pvU/95blL/fnNX/4+Eaf+dknf/lopy/4J5Zf9oZVf/W1pQ/3d0b//Qz8sA////APz5+wD9/P4A//7/APn8/wD7//8A/f//APv+/ADKy8cAkZGLADg3LQBBQTUATEg9AFFOQABqZ1gAjId4AIaBcgBhXE0AXllK/1JLPP9zbF3/n5aI/25mVf9oYVD/W1VC/2NcS/9nYFH/WVNG/1lSScaln5gA//v2AP///ADOycYAko2K5XRwa+JaV0/iYl5Z6lxWT/NqZVz/eHJn/2xmWf9nY1H/bWZV/2pkUf9kXUz/Y1xN/2JcT/+NiH8AxL63AP/7+AD///4A//v4ALCpoABybF//W1VI/1ZRQv9fW0n/XFhG/0E8Lf9OSTr/nZeM/6SekwB7dGsAkouC/7Cqn/+GgHX/Miwf/2FaSf9fVkL/bWVO/3JqU/91bVb/amJL/25lUf95cFz/fXZi/3tyXv9oYU3/ZV5L/2pjUP9vaFX/Zl9M/353ZP9kXU7/VlRJ/1JTSv92dnD/0M/LAP///wD//v8A+/r8AP/+/wD7//8A+///APb7+QD7//4A/f/8AP///ACusKoAjY2HAIyKggCurKQAwL62AP//+QDKx78Asa6mAJCNhQCZlo4Awbu0AOLd1ADDvrUTkpCFI15cUf9NS0CHYV9VZ3p3b2egnZh0//35AP///gD89/gA////AP///gDOzckAw8K+AL25uADEwb0AysbBAKuooAB2dGoAXlxR/l9bUP9XU0j/ZGBV/2lkW/+XlIz/vbq2AP35+AD8+fsA//3/AP/8/gDX09IAkY2I/2ZiXf9XVEz/XlxS/2poXv92dGr/nZqS/7CspwDHwr8A1tHOANzX1ADKxcIAvLizAJaSjf9vamH/b2lc/15XSP9fWEn/YFlK/11VSP9VTUD/gXtu/7u1qACtp5oAcWte/1lTRv9WUEP/WlRJ/2JcT/9bVUr/VlJH/1FPR/9TU03/nJuX/////gD///8A/fz+AP/+/wD8+/0A+v/+APv//gD7//4A9/z6APT59wD9//4A+f34AP///AD///4A//79AP37+gD///4A///+APr49wD///4A///+AP///gD///4A/fz4AM3NxwCoqKJnkZONTJ+hm0u5urZP///+AP///wD//v8A+vn7AP/+/wD///8A////APz9+wD///8A////AP/+/QDs6OcA0M3JAMrHwgDGw74AtbKtAK2qpQC7uLQAz83MAPz8/AD//v8A/f7/APb2/AD9/f8A//7/ANHPzwCopqUAmJeTAJ6dmf+0s68A19bSAP/+/QD///8A//3/AP/+/wD//f0A//39AP///gD//v0Aw8C8AJKPh/9nZVv/W1lP/0xKQP9YVU3/VlNL/5eUjADo5d0A39vWALSwqwCLh4L/gH11/397dv+Rjob/e3dy/2pnYv9cXFb/i42H/8bHwwD///4A+Pj4AP/+/wD//v8A//7/APz//QD3/PoA+P37APv//gD7//4A+f78APz//QD9//8A/f39AP///wD///8A/Pz8AP/+/wD//v8A//7/APj3+QD//v8A+Pf5AP///wD5+vgA/f/+AP3//gD9//4A/f//AP3//wD2+PkA/f7/AP3+/wD8/v8A9Pb3AP3//wD9//8A//7/APv6/AD///8A////APz6+gD+/PsA///+AP78+wD//fwA/f39AP39/QD//v8A/P3/APv8/wD3+v8A+/7/AP38/wD//v8A//7/AP///wD///8A///+AP///wD+/v4A/Pv/AP/+/wD//v8A/v3/AP/+/wD19PYA////AP///gDQz8sAsrGtAI2KhgB2dXH/fHh3/6WjogDHw8IA//38AP/7+gD///4A///+ANPR0ADPy8oA///8ANnW0gC+vbkAwcK+AP3++gD///4A////AP38/gD//v8A+vn7AP79/wD///8A/f//AP3//wD9//8A+vz8APf5+QD9//8A/P7/AP3//wD9//8A+Pr7AP3//wD49/kA/fz+APz7/QD//v8A/f7/APv8/wD9//8A/f//AP3//wD7/f0A/f//APj6+gD2+PkA/f7/APz9/wD9/v8A/f//AP3//wD6/PwA/f//AP3//wD8/v8A/f//AP/+/wD//v8A+/v7AP///wD///8A////AP///wD///8A9vj4AP3//wD6/P0A+///APr+/wD8+/8A//7/AP/+/wD9/f0A/Pz8AP39/QD///8A+Pj4AP/+/wD49/sA/vz/AP/+/wD//v8A//7/AP7+/gD9/f0A///+APb39QD///4A2NnXAP///wD9/f0A////AP///wD///8A////AP78/AD///8A////APz9+wD9+/oA///8APf49AD9//wA///+AP///wD+/f8A/fz/AP/+/wD+/f8A////AP39/QD7+/sA/P7+AP///wD9//8A//7/APb4+QD9//8A/f//APz+/wD8/v8A//7/AP///wD///8A//7/APn6/gD9/v8A/f7/AP3//wD7/f0A+vz8AP///wD8/v4A//7/APz+/wD6+f0A/f//APz7/QD5+/sA/P37AP3//gD9//8A+vz9APr8/QD7/f4A//7/AP/+/wD//v8A+/r8APr5+wD8/PwA9/n5AP3//gD6/fsA/f/+APv+/AD9//8A//7/AP/+/wD6+fsA/v7+AP///wD///4A////AP///wD//v8A/v3/AP/+/wD+/f8A+/r8AP///wD9/f0A////APz8/AD///8A////APj4+AD7+vwA//7/APn4+gD//v8A/fz+APz7/QD//v8A9vb2AP7+/gD///4A///+AP///gD9//wA+Pv5AP39/QD///8A//7/APn4/AD//v8A/fz+AP/+/wD//v8A//7/AP/+/wD//v8A/v3/AP/9/wD//v8A+Pf5AP/+/wD///8A////APn5+QD///4A+fr4APr6+gD//v8A//7/AP79/wD9/P4A////AP///gD///4A+/v7APr4+AD///8A//7/APn5+QD///8A///+AP///AD///wA+/78AP3//wD9//8A/f//APr8/QD9//8A//7/AP79/wD///8A////AP///gD///wA/v/6APn99wD7//cA/f/8AP///wD+/f8A////AP///gD///4A/v/7APr7+QD8/fsA/Pz8AP79/wD//v8A//7/AP///wD+//0A/P37AP///gD8//0A/f/+AP///wD///8A//7/AP38/gD9/P4A//7/AP/+/wD//v8A/f39APv7+wD///8A/f78AP///gD4+fUA+v37AP3//gD7/f0A+vz8AP/+/wD+/f8A//7/AP/+/wD//P4A//3/AP/9/wD//f8A//z+AP/+/wD8+fsA//7/AP/+/wD7+vwA/v7+APz8/AD///4A/P37AP3++gD///4A//7/AP/+/wD//v8A+/v7AP///wD//fwA///+AP///gD///8A/fv7AP/9/QD///8A+/n4AP///AD///wA/v/6AP7//QD8//0A+/39APv9/QD9//8A/f//AP/+/wD//v8A/Pz8AP///gD///4A/f/5AP//+wD///kA/f/4APr/9gD+/v4A/v7+AP///wD8/fsA/P35AP///AD///wA///8AP///wD8/PwA//7/AP///wD+/v4A+/z6AP///AD5+vYA/f/+AP3//gD9/f0A/f39AP/+/wD//v8A//7/APv6/AD+/f8A+fj6AP///wD///8A///+AP///gD+//sA///8APr9+wD9//4A/f//AP3//wD9/P8A//7/AP/+/wD+/f8A//////////////8A//////////////8A////////B/gAf/8A/wPD///AA/AAB/8A/gGAD/gAAcAAAP8A/gAAA/AAAAAAAH8A/gAAAAAAAAAAAH8A/gAAAAAAAAAAAD8A/wAAAAAAAAAAAD8A/4AAAAAAAAAAAD8A/4AAAAAAAAAAAD8A/wAAAAAAAAAAAD8A/wAAAAAAAAAAAD8A/AAAAAAAAAAAAD8A/AAAAAAAAAAAAD8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAD8A8AAAAAAAAAAAAD8A8AAAAAAAAAAAAD8A8AAAAAAAAAAAAH8A8AAAAAAAAAAAAH8A8AAAAAAAAAAAAH8A+AAAAAAAAAAAAH8A/AAAAAAAAAAAAD8A/gAAAAAAAAAAAB8A/gAAAAAAAAAAAA8A/AAAAAAAAAAAAA8A/AAAAAAAAAAAAAcA/AAAAAAAAAAAAA8A8AAAAAAAAAAAAA8A8AAAAAAAAAAAAA8A8AAAAAAAAAAAAB8A8AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAH8A+AAAAAAAAAAAAH8A+AAAAAAAAAAAAH8A+AAAAAAAAAAAAH8A/AAAAAAAAAAAAH8A/gAAAAAAAAAAAH8A/gAAAAAAAAAAAD8A/AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAB8A+AAAAAAAAAAAAA8A+AAAAAAAAAAAAA8A/gAAAAAAAAAAAA8A/gAAAAAAAAAAAB8A/gAAAAAAAAAAAD8A/gAAAAAAAAAAAD8A/AAAAAAAAAAAAD8A/AAAAAAAAAAAAB8A/gAAAAAAAAAAAB8A/wAAAAAAAAAAAB8A/gAAAAAAAAAAAB8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAB8A/AAAAAAAAAAAAB8A/AAAAAAAAAAAAB8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A+AAAAAAAAAAAAD8A/AAAAAAAAAAAAD8A/AAAAAAAAAAAAD8A+AAAAAADAAAAAB8A/GAAIAAHAAAAAB8A//wAeAAfgGAAAB8A///z//gfgPwBgB8A////////9/8DwD8A///////////n//8A//////////////8A//////////////8A//////////////8A//////////////8A rel=icon type=image/bmp><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:;"><style>img[src="data:,"],source[src="data:,"]{display:none!important}</style></head>
+<body contenteditable=false>
+ <h1>WTP Familiars v2.7</h1>
+ <div class=section>
+ <p><strong>Authors: Rabain &amp; <a href=mailto:crimes73@gmail.com>Salk</a><br>
+ EE Port: flamewing &amp; <a href=https://github.com/artyfox/WTPFamiliars>artyfox</a></strong></p>
+ <p><strong>(originally intended to be part of the now discontinued World Transition
+ Project)</strong></p>
+ </div>
+ <h2 class=c1>Overview</h2>
+ <div class="section c11">
+ <p>This mod introduces an alternative version of the Find Familiar spell, opting for
+ a more PnP faithful representation of it.&nbsp; The player will also be able to
+ choose from a pool of three or four creatures (exception: True Neutral mages are
+ restricted to the True Neutral Familiar).</p>
+ <p>When the spell is cast you will be able to select the Familiar matching your own
+ alignment or one of the Familiars whose alignment is within one step from your own.
+ For example, if your alignment is Lawful Evil you would have a choice between the Imp
+ (LE), the Dust Mephit (NE) and the Ferret (LN).</p>
+ <p>The Familiars have now extended dialogue and new icon colors. They will make
+ themselves heard when they feel they've spent too much time in the backpack and their
+ death has now different consequences for the player: failing the constitution based
+ system shock check (see table below) will render the mage temporarily vulnerable to
+ enemy attacks. Afterwards, a three-day period of mourning will prevent the summon of
+ a new Familiar. During this period, the mage suffers a -1 penalty to their
+ constitution. When the mourning is over, the mage will regain the lost constitution
+ point and will be able to summon a new Familiar.</p>
+ <p>The mod also introduces a new Familiar (spider) in order to have each alignment
+ represented by a different creature.&nbsp; The spider has been placed in the True
+ Neutral slot and as such minimum bumping has occurred with regard to which Familiar
+ is assigned to which alignment.</p>
+ <p>The new breakdown is as follows:</p>
+	 <table border=0 cellpadding=0 cellspacing=0 class=c9>
+	 <colgroup>
+	 <col width=68 span=3 class=c2>
+	 <col width=113 class=c3>
+	 <col width=68 class=c2>
+	 </colgroup>
+	 <tbody>
+	 <tr height=19 class=c7>
+	 <td height=19 width=68 class=c4><b>Familiar</b></td>
+	 <td width=68 class=c5><b>Spell File</b></td>
+	 <td width=68 class=c5><b>Alignment</b></td>
+	 <td width=68 class=c5><b>Change</b></td>
+	 <td class="xl63 c6" width=113><b>Summonable by</b></td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Rabbit</b></td>
+	 <td>WTPFLGRA</td>
+	 <td>Lawful Good</td>
+	 <td class=xl63>- was True Neutral</td>
+	 <td>Lawful Good, Neutral Good and Lawful Neutral</td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Pseudodragon</b></td>
+	 <td>WTPFNGPD</td>
+	 <td>Neutral Good</td>
+	 <td class=xl63>- no change</td>
+	 <td>Lawful Good, Neutral Good and Chaotic Good</td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Faerie Dragon</b></td>
+	 <td>WTPFCGFD</td>
+	 <td>Chaotic Good</td>
+	 <td class=xl63>- no change</td>
+	 <td>Neutral Good, Chaotic Good and Chaotic Neutral</td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Ferret</b></td>
+	 <td>WTPFLNFE</td>
+	 <td>Lawful Neutral</td>
+	 <td class=xl63>- no change</td>
+	 <td>Lawful Good, Lawful Neutral and Lawful Evil</td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Spider</b></td>
+	 <td>WTPFTNSP</td>
+	 <td>True Neutral</td>
+	 <td class=xl63>- no change</td>
+	 <td>Neutral Good, True Neutral and Neutral Evil</td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Cat</b></td>
+	 <td>WTPFCNCT</td>
+	 <td>Chaotic Neutral</td>
+	 <td class=xl63>- no change</td>
+	 <td>Chaotic Good, Chaotic Neutral and Chaotic Evil&nbsp;</td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Imp</b></td>
+	 <td>WTPFLEIM</td>
+	 <td>Lawful Evil</td>
+	 <td class=xl63>- no change</td>
+	 <td>Lawful Evil, Neutral Evil and Lawful Neutral</td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Dust Mephit</b></td>
+	 <td>WTPFNEME</td>
+	 <td>Neutral Evil</td>
+	 <td class=xl63>- no change</td>
+	 <td>Lawful Evil, Neutral Evil and Chaotic Evil</td>
+	 </tr>
+	 <tr height=19 class=c7>
+	 <td height=19 class=c8><b>Quasit</b></td>
+	 <td>WTPFCEQU</td>
+	 <td>Chaotic Evil</td>
+	 <td class=xl63>- no change</td>
+	 <td>Neutral Evil, Chaotic Evil and Chaotic Neutral&nbsp;</td>
+	 </tr>
+	 </tbody>
+	 </table>
+ <p>The Familiar also levels up with the mage, acquiring betters statistics and
+ abilities at different stages</p>
+ <ul>
+ <li>Hit points will increase</li>
+ <li>Saving Throws will improve</li>
+ <li>Armor Class will improve</li>
+ <li>Special abilities will be gained</li>
+ <li>...and more</li>
+ </ul>
+ <p>Detailed information about the Familiar is provided in the Inventory page, by
+ right clicking on the Familiar icon.&nbsp; All Familiars have now a portrait and also
+ a soundset assigned to them.&nbsp; The individual sounds vary for each
+ Familiar.&nbsp; The following sounds are installed:</p>
+ <ul>
+ <li>BORED</li>
+ <li>BATTLE_CRY1</li>
+ <li>BATTLE_CRY2</li>
+ <li>BATTLE_CRY3</li>
+ <li>BATTLE_CRY4</li>
+ <li>BATTLE_CRY5</li>
+ <li>DAMAGE</li>
+ <li>DYING</li>
+ <li>HURT</li>
+ <li>SELECT_COMMON1</li>
+ <li>SELECT_COMMON2</li>
+ <li>SELECT_ACTION1</li>
+ <li>SELECT_ACTION2</li>
+ <li>SELECT_RARE1</li>
+ <li>SELECT_RARE2</li>
+ </ul>
+ <p>The Familiar behaves in the same fashion as the standard BG2 Familiars and will
+ follow you from area to area. Each Familiar has a reference class (warrior, thief,
+ mage or druid/mage) that serves as generic guideline for THAC0, skills and saving
+ throws advancement. Familiars have a sense of self preservation and are therefore
+ scripted to jump into the backpack when their health is critically compromised and an
+ ongoing battle is threatening their life.&nbsp; Providing you rest before taking them
+ out again they will heal and memorise their known spells.&nbsp;</p>
+ <p>The system shock table:</p>
+ <table border=0 cellpadding=0 cellspacing=0 class=c10>
+ <colgroup>
+ <col width=68 span=2 class=c2>
+ </colgroup>
+ <tbody>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c4" width=68><b>CON</b></td>
+ <td class="xl63 c5" width=68><b>System Shock</b></td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">1</td>
+ <td class=xl64>25%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">2</td>
+ <td class=xl64>30%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">3</td>
+ <td class=xl64>35%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">4</td>
+ <td class=xl64>40%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">5</td>
+ <td class=xl64>45%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">6</td>
+ <td class=xl64>50%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">7</td>
+ <td class=xl64>55%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">8</td>
+ <td class=xl64>60%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">9</td>
+ <td class=xl64>65%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">10</td>
+ <td class=xl64>70%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">11</td>
+ <td class=xl64>75%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">12</td>
+ <td class=xl64>80%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">13</td>
+ <td class=xl64>85%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">14</td>
+ <td class=xl64>88%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">15</td>
+ <td class=xl64>90%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">16</td>
+ <td class=xl64>95%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">17</td>
+ <td class=xl64>97%</td>
+ </tr>
+ <tr height=19 class=c7>
+ <td height=19 class="xl63 c8">18+</td>
+ <td class=xl64>99%</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ <h2 class=c1>Familiar Statistics</h2>
+ <div class=section>
+ <p class=c12>Each familiars now has an assortment of special abilities and grow in power with the summoner. Talk to your familiar after
+ leveling up to see the changes.&nbsp;<p class=c12>Many familars will also grant a unique bonus when they
+ are within 15 feet proximity to the master. Take note of your familiars tooltip while in combat.</p>
+ <p class=c12><br></p>
+ <h2 class=c1>Rabbit (LG)&nbsp;<span class=c13>[WTPRABBI.CRE /
+ WTPFRAB.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c14>Armor Class: 6</p>
+ <p class=c14>Hit Points:&nbsp; 4</p>
+ <p class=c14>Attacks per Round: 1</p>
+ <p class=c14>Backstab multiplier: x2</p>
+ <p><b>Special abilities: Wary (immunity to backstab),</b><b>&nbsp;</b><b>Lucky (+1
+ luck bonus)</b></p>
+ <p class=c14>Burrow once per day (hides from enemies)</p>
+ <p class=c14>Empowerment: the familiar receives a level-based, affinity-modified
+ bonus to Saving Throws and Armor Class if in proximity to the master</p>
+ <p class=c14><br></p>
+ <p class=c15>Level Up (Thief Class):</p>
+ <p class=c14>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</p>
+ <p class=c14>Thieving skills: +4 to Open Lock, Move Silently, Hide in Shadow,
+ Detect Illusion, Find Traps, Pick Pocket (Lv 2-7, 9-14, 16-21, 23-28, 30-35, 37-42,
+ 44-49), +5 (Lv 8, 15, 22, 29, 36, 43, 50)</p>
+ <p class=c14>Armor Class: +2 (Lv 4, 11, 19, 32)</p>
+ <p class=c14>THAC0: +1 (Lv 3, 5, 7, 9, 11, 13, 15, 17, 19, 21)</p>
+ <p class=c14>Weapon enchantment: +1 (Lv 5, 12, 20)</p>
+ <p class=c14>Saving Throws improvements at level 5, 9, 13, 17, 21</p>
+ <p class=c14>Backstab multiplier: +1 (Lv 5, 9, 13)</p>
+ <p class=c14>Special: Burrow (Lv 6, 12, 20, 30)</p>
+ </div>
+ <h2 class=c1>Pseudodragon (NG)&nbsp;<span class=c13>[WTPSEUDO.CRE /
+ WTPFPSE.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c14>Armor Class: 2</p>
+ <p class=c14>Hit Points: 4</p>
+ <p class=c14>Attacks per Round: 1</p>
+ <p class=c14>Magic Resistance: 35%</p>
+ <p><b>Special abilities: A</b><b>ttacks with a +4 bonus (may render those scratched
+ by it unconscious)</b></p>
+ <p class=c14>Grants 2% magic resistance to the master if within 15 feet</p>
+ <p class=c14>Can cast Camouflage once per day</p>
+ <p class=c14>Spell bounce: the familiar has an affinity-modified chance of
+ mirroring the effects of personal protective spells cast by the master</p>
+ <p><br></p>
+ <p class=c15>Level Up (Mage Class):</p>
+ <p class=c14>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</p>
+ <p class=c14>Armor Class: +1 (Lv 4, 11, 19, 32)</p>
+ <p class=c14>THAC0: +1 (Lv 7, 10, 13, 16, 19, 22)</p>
+ <p class=c14>Weapon enchantment: +1 (Lv 5, 12, 20)</p>
+ <p class=c14>Saving Throws improvements at level 6, 11, 16, 21</p>
+ <p class=c14>Special: Camouflage (Lv 1, 6)</p>
+ <p class=c14>Detect Invisibility (Lv 3, 9)</p>
+ <p class=c14>Improved Camouflage (Lv 12, 15)</p>
+ </div>
+ <h2 class=c1>Faerie Dragon (CG)&nbsp;<span class=c13>[WTPFAIRY.CRE /
+ WTPFFAE.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c14>Armor Class: 5</p>
+ <p class=c14>Hit Points: 4</p>
+ <p class=c14>Attacks per Round: 1</p>
+ <p class=c14>Magic Resistance: 10%</p>
+ <p class=c14>Special abilities:&nbsp;&nbsp;Attacks with a 2-foot-diameter cloud
+ of euphoria gas (failing a saving throw vs. breath weapon, the victim will wander
+ around aimlessly, unable to attack and with Armor Class decreased by 2)</p>
+ <p class=c14>Can cast Invisibility once per day</p>
+ <p class=c14>Spell bounce: the familiar has an affinity-modified chance of
+ mirroring the effects of personal protective spells cast by the master</p>
+ <p><br></p>
+ <p class=c15>Level Up (Mage/Druid Class):</p>
+ <p class=c14>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</p>
+ <p class=c14>Armor Class: +1 (Lv 4, 11, 19, 32)</p>
+ <p class=c14>THAC0: +1 (Lv 7, 10, 13, 16, 19, 22)</p>
+ <p class=c14>Weapon enchantment: +1 (Lv 5, 12, 20)</p>
+ <p class=c14>Saving Throws improvements at level 4, 6, 7, 10, 11, 13, 16, 19,
+ 21</p>
+ <p class=c14>Magic Resistance: +6% (Lv 2) +8% (Lv 3-12)</p>
+ <p class=c14>Special: Suggestion (Lv 3, 9)</p>
+ <p class=c14>Invisibility (Lv 6)</p>
+ <p class=c14>Limited Wish (Faerie Dragon) (Lv 15)</p>
+ </div>
+ <h2 class=c1>Ferret (LN)&nbsp;<span class=c13>[WTPFERRE.CRE /
+ WTPFFER.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c14>Armor Class: 6</p>
+ <p class=c14>Hit Points: 4</p>
+ <p class=c14>Attacks per Round: 1</p>
+ <p class=c14>Backstab multiplier: x2</p>
+ <p class=c14>Special abilities: Rapid motions (always hasted)</p>
+ <p class=c14>Can cast War Dance once per day (taunts one enemy)</p>
+ <p class=c14>Empowerment: the familiar receives a level-based, affinity-modified
+ bonus to Saving Throws and Armor Class if in proximity of the master</p>
+ <p class=c14><br></p>
+ <p class=c15>Level Up (Thief Class):</p>
+ <p class=c14>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</p>
+ <p class=c14>Thieving skills: +4 to Open Lock, Move Silently, Hide in Shadow,
+ Detect Illusion, Find Traps, Pick Pocket (Lv 2-7, 9-14, 16-21, 23-28, 30-35, 37-42,
+ 44-49), +5 (Lv 8, 15, 22, 29, 36, 43, 50)</p>
+ <p class=c14>Armor Class: +2 (Lv 4, 11, 19, 32)</p>
+ <p class=c14>THAC0: +1 (Lv 3, 5, 7, 9, 11, 13, 15, 17, 19, 21)</p>
+ <p class=c14>Weapon enchantment: +1 (Lv 5, 12, 20)</p>
+ <p class=c14>Saving Throws improvements at level 5, 9, 13, 17, 21</p>
+ <p class=c14>Backstab multiplier: +1 (Lv 5, 9, 13)</p>
+ <p class=c14>Special: War Dance (Lv 6, 12, 20, 30)</p>
+ </div>
+ <h2 class=c1>Spider (TN)&nbsp;<span class=c13>[WTPSPIDE.CRE /
+ WTPFSPI.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c16><b>Armor Class: 6</b><br><p class=c16><b>Hit Points: 4</b><p class=c16><p class=c16><b>Attacks per Round: 1</b></p>
+ <p class=c16><b>Special abilities: Attacks with</b><b>&nbsp;venom (onset time of
+ 1-2 rounds and causes paralysis for 2d4 turns, unless the victim makes a successful
+ saving throw vs. poison with a +1 bonus)</b></p>
+ <p class=c16><b>Immunity to critical hits,&nbsp;</b><b>Has 50% resistance to
+ poison</b><p class=c16><b>Can cast Web once per day</b><p class=c16><p class=c16><b>Empowerment: the familiar receives a level-based, affinity-modified bonus to Hit Points, THAC0 and Armor Class if in proximity of the master</b></p>
+ <p class=c17><br></p>
+ <p class=c18><b>Level Up (Warrior Class):</b></p>
+ <p class=c17><b>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</b></p>
+ <p class=c17><b>Armor Class: +1 (Lv 4, 11, 19, 32)</b></p>
+ <p class=c17><b>THAC0: +1 (Lv 3-21)</b></p>
+ <p class=c17><b>Weapon enchantment: +1 (Lv 5, 12, 20)</b></p>
+ <p class=c17><b>Saving Throws improvements at level 3, 5, 7, 9, 11, 13, 15, 17</b></p>
+ <p class=c17><b>Attacks per Round: + 0,5 (Lv 4, 7, 10, 13)</b></p>
+ <p class=c17><b>Poison Resistance: +5 (Lv 2-8)</b></p>
+ <p class=c17><b>Special: Web (Lv 6, 12, 20, 30)</b></p>
+ <p class=c17><b>Wraith Form (Lv 9)</b></p>
+ <p class=c17><b>Phasing (Lv 12)</b></p>
+ <p class=c17><b>Improved Phasing (Lv 15)</b></p>
+ </div>
+ <h2 class=c1>Cat (CN)&nbsp;<span class=c13>[WTPCAT.CRE / WTPFCAT.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c14>Armor Class: 6</p>
+ <p class=c14>Hit Points: 4</p>
+ <p class=c14>Attacks per Round: 2</p>
+ <p class=c14>Backstab multiplier: x2</p>
+ <p><b>Special abilities: Keen Vision (dispels normal
+ invisibility),&nbsp;</b><b>Nine Lives (+4 bonus to Save vs Death)</b></p>
+ <p class=c14>Empowerment: the familiar receives a level-based, affinity-modified
+ bonus to Saving Throws and Armor Class if in proximity of the master</p>
+ <p><br></p>
+ <p class=c15>Level Up (Thief Class):</p>
+ <p><b>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</b><br></p>
+ <p class=c14>Thieving skills: +4 to Open Lock, Move Silently, Hide in Shadow,
+ Detect Illusion, Find Traps, Pick Pocket (Lv 2-7, 9-14, 16-21, 23-28, 30-35, 37-42,
+ 44-49), +5 (Lv 8, 15, 22, 29, 36, 43, 50)</p>
+ <p class=c14>Armor Class: +2 (Lv 4, 11, 19, 32)</p>
+ <p class=c14>THAC0: +1 (Lv 3, 5, 7, 9, 11, 13, 15, 17, 19, 21)</p>
+ <p class=c14>Weapon enchantment: +1 (Lv 5, 12, 20)</p>
+ <p class=c14>Saving Throws improvements at level 5, 9, 13, 17, 21</p>
+ <p class=c14>Backstab multiplier: +1 (Lv 5, 9, 13)</p>
+ <p class=c14>Special: Keen Sense (Lv 12) (dispels non-detection)</p>
+ </div>
+ <h2 class=c1>Imp (LE)&nbsp;<span class=c13>[WTPIMP.CRE / WTPFIMP.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c14>Armor Class: 2</p>
+ <p class=c14>Hit Points: 4</p>
+ <p class=c14>Attacks per Round: 1</p>
+ <p><b>&nbsp;</b><b>Magic Resistance: 25%</b><b><br></b></p>
+ <p><b>Special abilities:&nbsp;</b><b>Attacks with the wicked stinger on its tail
+ (1-4 points of damage and injects a powerful poison)</b></p>
+ <p><b>Regenerates 1 HP / round,&nbsp;</b><b>50% resistance to fire, cold, and
+ electricity</b><b><br></b></p>
+ <p class=c14>Can cast Detect Good once per day</p>
+ <p class=c14>Grants 2% magic resistance to the wizard provided no distance
+ greater than 15 feet separates them</p>
+ <p class=c14>Spell bounce: the familiar has an affinity-modified chance of
+ mirroring the effects of personal protective spells cast by the master</p>
+ <p><br></p>
+ <p class=c15>Level Up (Mage Class):</p>
+ <p class=c14>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</p>
+ <p class=c14>Armor Class: +1 (Lv 4, 11, 19, 32)</p>
+ <p class=c14>THAC0: +1 (Lv 7, 10, 13, 16, 19, 22)</p>
+ <p class=c14>Weapon enchantment: +1 (Lv 5, 12, 20)</p>
+ <p class=c14>Saving Throws improvements at level 6, 11, 16, 21</p>
+ <p class=c14>Fire, Cold and Electric Resistance: +5 (Lv 2-11)</p>
+ <p class=c14>Special: Horror (Lv 3)</p>
+ <p class=c14>Invisibility (Lv 6)</p>
+ <p class=c14>Spider Form (Lv 9)</p>
+ <p class=c14>Immunity to Normal Weapon (Lv 9)</p>
+ <p class=c14>Detect Magic (Lv 12)~</p>
+ </div>
+ <h2 class=c1>Dust Mephit (NE)&nbsp;<span class=c13>[WTPDMEPH.CRE /
+ WTPFDME.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c14>Armor Class: 6</p>
+ <p class=c14>Hit Points: 4</p>
+ <p class=c14>Attacks per Round: 2</p>
+ <p><b>Special abilities:&nbsp;</b><b>Regenerates 1 HP / turn,&nbsp;</b><b>Immunity
+ to critical hits</b></p>
+ <p><b>Has 50% resistance to fire and 50% resistance to slashing, piercing, and
+ missile damage</b><b><br></b></p>
+ <p class=c14>Can use Glass Dust once per day (-4 AC and -2 THAC0 for 3 rounds to
+ humanoids in a 15' radius)</p>
+ <p class=c14>Empowerment: the familiar receives a level-based, affinity-modified
+ bonus to Hit Points, THAC0 and Armor Class if in proximity of the master</p>
+ <p><br></p>
+ <p class=c15>Level Up (Warrior Class):</p>
+ <p class=c14>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</p>
+ <p class=c14>Armor Class: +1 (Lv 4, 11, 19, 32)</p>
+ <p class=c14>THAC0: +1 (Lv 5-21)</p>
+ <p class=c14>Weapon enchantment: +1 (Lv 5, 12, 20)</p>
+ <p class=c14>Saving Throws improvements at level 3, 5, 7, 9, 11, 13, 15, 17</p>
+ <p class=c14>Attacks per Round: + 0,5 (Lv 10, 13)</p>
+ <p class=c14>Fire Resistance: +5 (Lv 2-11)</p>
+ <p class=c14>Special: Glass Dust (Lv 3, 6)</p>
+ <p class=c14>Gate Dust Mephit (Lv 12)</p>
+ </div>
+ <h2 class=c1>Quasit (CE)&nbsp;<span class=c13>[WTPQUASI.CRE /
+ WTPFQUA.BAF]</span></h2>
+ <p class=c12></p>
+ <div class=section>
+ <p class=c14>Armor Class: 2</p>
+ <p class=c14>Hit Points: 4</p>
+ <p class=c14>Attacks per Round: 3</p>
+ <p class=c14>Magic Resistance: 25%</p>
+ <p><b>Special abilities:&nbsp;</b><b>Claws&nbsp;are coated in a toxin (save versus
+ poison or lose one point of dexterity for 6 rounds, cumulative)</b></p>
+ <p><b>Regenerates 1 HP / round,&nbsp;</b><b>Immunity to critical
+ hits,&nbsp;</b><b>Has 50% resistance to fire, cold, and electricity</b></p>
+ <p class=c14>Can cast Detect Good once per day</p>
+ <p class=c14>Empowerment: the familiar receives a level-based, affinity-modified
+ bonus to Hit Points, THAC0 and Armor Class if in proximity of the master</p>
+ <p class=c14><br></p>
+ <p class=c15>Level Up (Warrior Class):</p>
+ <p class=c14>HPs: +4 (Lv 2-9), +2 (Lv 10-19), +1 (Lv 20-50)</p>
+ <p class=c14>Armor Class: +1 (Lv 4, 11, 19, 32)</p>
+ <p class=c14>THAC0: +1 (Lv 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+ 20, 21)</p>
+ <p class=c14>Weapon enchantment: +1 (Lv 5, 12, 20)</p>
+ <p class=c14>Saving Throws improvements at level 3, 5, 7, 9, 11, 13, 15, 17</p>
+ <p class=c14>Fire, Cold and Electric Resistance: +5 (Lv 2-11)</p>
+ <p class=c14>Special: Horror (Lv 3)</p>
+ <p class=c14>Invisibility (Lv 6)</p>
+ <p class=c14>Wolf Form (Lv 9)</p>
+ <p class=c14>Immunity to Normal Weapon (Lv 9)</p>
+ <p class=c14>Detect Magic (Lv 12)</p>
+ </div>
+ </div>
+ <h2 class=c1>Compatibility</h2>
+ <div class=section>
+ <p class=c12>This mod is designed to work with Baldur's Gate II: Shadows of Amn
+ with the Throne of Bhaal expansion pack and has been completely overhauled with full
+ Baldur's Gate Trilogy compatibility in mind.</p>
+ <p class=c12>It also supports Baldur's Gate I: Enhanced Edition (incl. Siege of
+ Dragonspear w/DLC Merger), Baldur's Gate II: Enhanced Edition, Enhanced Edition
+ Trilogy,&nbsp; and has experimental support for Icewind Dale: Enhanced Edition.</p>
+ <p class=c12>It is recommended to install this modification after Spell Revisions
+ or any other modification that changes the Find Familiar spell in any way.<br></p>
+ <p class=c15>Modder's notes:</p>
+ <p class=c12>Replaces the default Find Familiar spells (SPCL342, SPWI123) and
+ scroll item (SCRL6D).</p>
+ <p class=c14>Does not use opcode #192 (Spell Effect: Find Familiar) and does not
+ overwrite the default familiar creatures.</p>
+ <p class=c14>All new resources in the override folder start with the prefix,
+ WTP*.</p>
+ </div>
+ <h2 class=c1>Known Bugs</h2>
+ <div class="section c11">
+ <p>There are a few minor visual glitches (unpolished level up process, spider's green
+ circle's being a bit off, spells' visual effects showing for a brief moment when the
+ familiar leaves the backpack).</p>
+ <p>Player1/Protagonist must be the summoner for the familiar in all games. In
+ Icewinde Dale: Enhanced Edition, that means only the character in the first position
+ will work.</p>
+ <p>Some scripts may interrupt the familiar's actions (eg. it may stop attacking, when
+ you move into aura radius)</p>
+ </div>
+ <h2 class=c1>Installation</h2>
+ <div class="section c11">
+ <p>WTPFamiliars is packaged and installed with <acronym title="Weimer Dialogue Utility">WeiDU</acronym> and distributed as a zip archive. To
+ install, simply double-click the archive and extract the contents to your BG2 game
+ folder.</p>
+ <p>You should then have a WTPFamiliar&nbsp; folder and Setup-WTPFamiliar.exe in your
+ <acronym title="Baldur's Gate II">BG2</acronym> folder. To install, simply
+ double-click Setup-WTPFamiliar.exe and follow the instructions on screen.</p>
+ <p>Please run Setup-WTPFamiliar.exe in your <acronym title="Baldur's Gate II">BG2</acronym> folder to reinstall or uninstall this
+ modification.</p>
+ <p>If you are on Linux, you need to have oggenc installed on your system at a place
+ WeiDU can find it. Installing it through your package manager should suffice.</p>
+ </div>
+ <h2 class=c1>Contact Information</h2>
+ <div class="section c11">
+ <p>Rabain created this mod.</p>
+ <p><a href=mailto:crimes73@gmail.com>Salk</a> expanded and bugfixed it
+ (hopefully).</p>
+ <p><a href=https://github.com/flamewing/WTPFamiliars>flamewing</a> updated it for
+ Enhanced Edition and put it on GitHub.</p>
+ <p><strong><a href=https://github.com/artyfox/WTPFamiliars>artyfox</a></strong>&nbsp;forked and
+ maintains the mod.</p>
+ </div>
+ <h2 class=c1>Thanks and Acknowledgements</h2>
+ <div class="section c11">
+ <ul>
+ <li>Thanks go to Sir-Kill and Dragonlord for accepting me into the WTP and to
+ Sir-Kill for the new bams/portraits in use in this mod.</li>
+ <li>igi for pointing me in the right direction with spells and some tp2 user
+ friendliness!</li>
+ <li>Blackwyrmlair Staff and Members for their support and patience.</li>
+ <li>The various mod site members and regulars who provide invaluable expertise to
+ everyone who asks.</li>
+ <li>(Salk) My wife for her invaluable contribution in creating new portraits,bams
+ and additional dialogue.</li>
+ <li>(Salk) Everyone at Gibberlings3, Pocketplane and SHS that helped me try putting
+ all this together.</li>
+ </ul>
+ <p><strong>Tools used in creation:</strong><p><strong></strong>
+ <a href=http://www.context.cx/>ConTEXT</a><br>
+ <a href="http://www.dragonlancetc.com/forums/?board=9"><acronym title="Dragonlance Total Conversion Editor Pro">DLTCEP</acronym></a> by Avenger<br>
+ <a href=http://iesdp.gibberlings3.net/><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a> maintained by
+ igi<br>
+ <a href=http://www.idi.ntnu.no/~joh/ni/>Near Infinity</a> by Jon Olav Hauglid<br>
+ <a href=http://www.mud-master.com/shadowkeeper/>Shadowkeeper</a> by
+ Mud-Master<br>
+ <a href=http://www.gimp.org/>GIMP</a><br>
+ <acronym title="Weimer Dialogue Utility"><a href=http://www.weidu.org/>WeiDU</a></acronym> by Wes Weimer / The Bigg</p>
+ </div>
+ <h2 class=c1>Credits and Copyright Information</h2>
+ <div class="section c11">
+ <p><strong>The original WTPFamiliars is ©2007 Rabain. Version
+ 1.0 and later are released and made public under the Creative Commons BY-NC-SA 3.0
+ licence.</strong></p>
+ <p><strong>Images used courtesy of:</strong></p><strong><a href="http://www.amazon.com/Monstrous-Manual-Fantasy-Roleplaying-Accessory/dp/1560766190/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1418470655&amp;sr=1-1&amp;keywords=monstrous+manual">Monstrous
+ Manual 1993</a><br>
+ <a href="http://www.amazon.com/Monstrous-Compendium-Appendix-Planescape-Accessory/dp/1560768622/ref=sr_1_4?s=books&amp;ie=UTF8&amp;qid=1418470688&amp;sr=1-4&amp;keywords=Monstrous+Compendium+Appendix">
+ Monstrous Compendium Appendix (Planescape)</a><br>
+ <a href=https://colvillevalleyanimalsanctuary.wordpress.com/2012/03/05/top-10-reasons-to-adopt-a-black-cat/>
+ colvillevalleyanimalsanctuary</a><br>
+ <a href=http://vegasmike.deviantart.com/art/Imp-129907124>VegasMike</a><br>
+ <a href=http://www.brucepearson.net/artist%20profile.html>Bruce Pearson</a><br>
+ <a href=http://grouchywolfpup.deviantart.com/art/Rabbit-Realism-148816910>grouchywolfpup</a><br>
+ <a href=http://www.myrmecos.net/about-alex-wild-2/>Alex Wild</a><br></strong>
+ <p><strong>Partial inclusion of material from:</strong></p><strong><a href=http://www.spellholdstudios.net/ie/atweaks>aTweaks</a><br>
+ <a href=http://www.gibberlings3.net/kit_rev/>Kit Revision</a><br></strong>
+ </div>
+ <h2><strong class=c19>Version History</strong></h2>
+ <div class=section>
+ <p><strong class=c19><strong>Beta Version 0.5</strong></strong></p>
+ <ul>
+ <li>Initial Beta release (Rabain)</li>
+ </ul>
+ <p><strong>Version 1.0 Beta 1</strong></p>
+ <ul>
+ <li>Complete overhaul of the original modification by Rabain</li>
+ <li>Fixed a number of bugs present in the 0.5 version</li>
+ <li>Expanded dialogue, script and level up dynamic</li>
+ </ul>
+ <p><strong>Version 1.1 Beta 2</strong></p>
+ <ul>
+ <li>Fixed CTD occurance (thanks MadMate)</li>
+ <li>Fixed a dialogue error</li>
+ </ul>
+ <p><strong>Version 1.2 Beta 1</strong></p>
+ <ul>
+ <li>Fixed a bug that would cause a dead familiar to return to the backpack</li>
+ </ul>
+ <p><strong>Version 1.3</strong></p>
+ <ul>
+ <li>First non Beta version</li>
+ <li>The familiar levels up now via dialogue (except when summoned)</li>
+ <li>Fixed a bug that would cause a script to fire more than once (thanks
+ Jarno)</li>
+ <li>Changed the familiars' allegiance from "CONTROLLED" to "FAMILIAR" (thanks
+ Argent77)</li>
+ <li>Added dialogue option to have the familiar follow automatically</li>
+ <li>Additional special ability for ferret, cat and rabbit (thanks Galactycon)</li>
+ <li>The familiars will no longer accept to go into the backpack too soon</li>
+ <li>The familiars' nagging will not knock the player out of a store or inn screen
+ (thanks AstroBryGuy)</li>
+ <li>Corrected a few typos</li>
+ <li>Numerous adjustments of various kind</li>
+ <li>Minor script changes</li>
+ </ul>
+ <p><strong>Version 1.4</strong></p>
+ <ul>
+ <li>Fixed a bug with the wrong use of chapter globals</li>
+ </ul>
+ <p><strong>Version 1.5</strong></p>
+ <ul>
+ <li>Fixed a bug with equipping weapon for a number of familiars</li>
+ <li>Now the familiar leaving after friendly fire will no longer prevent the
+ summoning of a new familiar</li>
+ <li>Attempt to avoid disruption of the familiar's levelling up process</li>
+ <li>Corrected a few typos</li>
+ </ul>
+ <p><strong>Version 1.55</strong></p>
+ <ul>
+ <li>Corrected a typo that'd reset the wrong variable</li>
+ <li>Fixed spell description for the Find Familiar scroll</li>
+ </ul>
+ <p><strong>Version 1.6</strong></p>
+ <ul>
+ <li>Fixed incompatibility with BGT transition script</li>
+ <li>Fixed incompatibility with Game Over Only on Party Dead modification</li>
+ <li>Improved familiars' discontent mechanic</li>
+ <li>Minor tweaks to dialogue and scripts</li>
+ </ul>
+ <p><strong>Version 1.65</strong></p>
+ <ul>
+ <li>Corrected a typo breaking level up dialogue option at level 12</li>
+ </ul>
+ <p><strong>Version 1.7</strong></p>
+ <ul>
+ <li>The familiars will no longer stubbornly refuse to return to the backpack when
+ their or the mage's health is seriously compromised in battle</li>
+ <li>Attempt to avoid having the familiar's nagging ever interrupt the player during
+ combat</li>
+ <li>Fixed minor bug with evil familiars' TOB dialogue</li>
+ <li>Additional dialogue for reputation shift (good aligned familiars will not stay
+ with a villain!)</li>
+ <li>Fixed minor bug with the ferret's and the rabbit's Burrow ability</li>
+ </ul>
+ <p><strong>Version 1.8</strong></p>
+ <ul>
+ <li>All familiars use now their innate abilities instantaneously</li>
+ <li>Introduced new Special Ability for Thief/Warrior class familiars:
+ Empowerment</li>
+ <li>Introduced new Special Ability for Mage class familiars: Spell bounce</li>
+ <li>Wraith Form and Phasing abilities added to Spider</li>
+ <li>Warrior class familiars are now immune to Critical Hits</li>
+ <li>Fixed a bug with the Spider's poison resistance</li>
+ <li>Fixed minor incompatibility with Sword Coast Stratagems</li>
+ </ul>
+ <p><strong>Version 2.0</strong></p>
+ <ul>
+ <li>Included missing Bard, Beast Master and Thief with UAI ability classes</li>
+ <li>Fixed minor issue with party members using the Find Familiar scroll in the
+ quick slot</li>
+ <li>Fixed issue with Empowerment not switching on the fly when Reputation changes
+ would affect it</li>
+ <li>Fixed issue with Empowerment not correctingly updating the hit points
+ gain/loss</li>
+ <li>Fixed issue with Empowerment not removing old bonus before applying new
+ ones</li>
+ <li>Changed Empowerment's visual cue to something less intrusive</li>
+ <li>Alleviated stuttering when Empowerment is being applied to or removed from
+ Thief/Warrior class familiars</li>
+ <li>Raised base thieving skills for cat, ferret and rabbit</li>
+ <li>Changed Burrow ability: the familiar stays hidden until the master recalls
+ him</li>
+ <li>Paralyzed or Intoxicated should now no longer appear on Undead</li>
+ <li>Mage class familiars now cast mirrored spells at the right level (thanks
+ kjeron)</li>
+ <li>Fixed bug with some thieving skill and poison resistance bonuses being erased
+ when the familair moves to the backpack (thanks magus)</li>
+ <li>Small cosmetic changes to the summoning/level up of the familiars</li>
+ <li>The spider's poisonous/paralyzing attack now scales with the enchantement of
+ the weapon</li>
+ <li>The familiars no longer initiate any dialogue</li>
+ <li>Fixed compatibility problems with Game Over only on Party Dead (requires
+ version 1.7 or higher)</li>
+ <li>Updated WeiDU to version 241</li>
+ </ul>
+ <p><strong>Version 2.1</strong></p>
+ <ul>
+ <li>The Burrow ability is now exclusive to the rabbit</li>
+ <li>The Burrow ability is now restricted to Outdoor and Dungeon areas rather than
+ just Outdoor</li>
+ <li>The ferret gains more instances of its War Dance ability to compensate the loss
+ of the Burrow ability</li>
+ <li>A couple of text changes to provide basic information about the Dust Mephit's
+ Glass Dust ability</li>
+ <li>Fixed a typo in the WTFAMPx.d files</li>
+ <li>Minor code changes</li>
+ </ul>
+ <p><strong>Version 2.5</strong></p>
+ <ul>
+ <li>Fixed critical bug with Rabbit crashing the game when asked to return to
+ backpack (thanks Chitown Willie)</li>
+ <li>Fixed critical bug with familiars not levelling up more than once (thanks
+ enkku)</li>
+ <li>Fixed minor bug with empowered familiar not showing the correct name at the end
+ of the dialogue-based level up process</li>
+ <li>The level up process now shows the amount of XP the familiar has gained</li>
+ <li>Updated WeiDU to version 246</li>
+ </ul>
+ <p><strong>Version 2.6</strong></p>
+ <ul>
+ <li>Added support for Linux and OSX by lowercasing all file names and using WeiDU's
+ HANDLE_AUDIO for ogg conversion</li>
+ <li>Enabling experimental IWDEE support</li>
+ <li>A few script improvements</li>
+ </ul><div><p><strong>Version 2.7</strong><ul><li>Fixed missing and incorrent string references in BGEE/IWDEE<li>Fixed summoning inconsistency on first cast in BG(2)EE<li>Enabled proper installation of global scripts in BGEE/SOD campaign/IWDEE<li>Incorporated Salk's 2.55 dialogue refinements<li>Updated to WeiDU 249</ul></div>
+ </div>

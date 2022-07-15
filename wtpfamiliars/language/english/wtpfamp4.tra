@@ -27,7 +27,7 @@
 @31   = ~"Aahhhh..." The familiar hums with contentment, its fangs twitching. "Yes, this is good. Food would also be nice."~
 @32   = ~It looks up with its many eyes, seemingly content to just be near you. It looks away briefly. "We are connected, you and I. If you are well, so am I."~
 @33   = ~"But I myself have a few insignificant injuries. I am strengthened because you are stronger than I. If you could treat my wounds, it would please me."~
-@34   = ~"But I, myself, am hurt very badly. I bleed, <PRO_MANWOMAN>. I may survive, or I may not... we shall see."~
+@34   = ~"But I, myself, am hurt very badly. I bleed, <PRO_MANWOMAN>. I may survive, or I may not... We shall see."~
 @35   = ~But since you ask, I am rather hungry. I used to hunt and catch food in my webs but now that we are constantly on the move, keeping me fed becomes your task, <PRO_MANWOMAN>.~
 @36   = ~"But I think you are a good enough traveling companion. I am pleased with the progress we make. Perhaps I shall remain with you for some time to come; we shall see."~
 @37   = ~The large spider seems to ponder saying something else, but eventually its attention drifts and it finds something more interesting than you elsewhere.~
@@ -44,7 +44,7 @@
 @48   = ~Let's just keep going, then.~
 
 // Advice for BG1 in BGT
-@50   = ~The spider tucks in its legs. "Try and not get on the bad side of Ulraunt. The Old Buzzard seems to barely tolerate your presence around here."~
+@50   = ~The spider tucks in its legs. "Try and not get on the bad side of Ulraunt. The old buzzard seems to barely tolerate your presence around here."~
 @51   = ~"Whoever wants you dead will strike again, <PRO_MANWOMAN>." The spider looks at you worriedly. "We can't let ourselves be caught by surprise when it happens."~
 @52   = ~The spider scuttles up your leg and chest to settle on your shoulder. "I'm sure there is something to be found in these parts. You'd better keep your eyes open, <CHARNAME>."~
 @53   = ~ The familiar peers up at you from behind your legs. "Your next move seems pretty obvious to me, <PRO_MANWOMAN>. You just have to find out who wants you dead. And why."~
@@ -82,12 +82,12 @@
 @80   = ~"Let's see... the wizard is behind all your trials, yes? Then it is easy, <PRO_MANWOMAN>. Find him, kill him, and your troubles are no more. Now will you feed me, yes?"~
 @81   = ~It looks about balefully, its hairy abdomen quivering in distress. "I do not like this place. We should leave immediately."~
 @82   = ~"Hmm, the elven city has the Tree of Life within, <PRO_MANWOMAN>, a wondrous thing connected to all that is natural. You must find the city and the Tree. That is my advice."~
-@83   = ~The spider's silky voice vibrates with uncharacteristic ferocity. "There is only one solution, <PRO_MANWOMAN>. For you to survive, the wizard must die. That is how it must be."~
+@83   = ~The spider's silky voice vibrates with uncharacteristic ferocity. "There is only one solution, <PRO_MANWOMAN>: for you to survive, the wizard must die. That is how it must be."~
 
 // Advice for ToB
-@84   = ~The large spider looks uninterested. "I do not know what advice to give. The wizard is dead, you have your soul... can you not just leave?"~
+@84   = ~The large spider looks uninterested. "I do not know what advice to give. The wizard is dead, you have your soul... Can you not just leave?"~
 @85   = ~It seems to concentrate, thinking hard. "It...seems to me that there is a reason that all the children of Bhaal are coming together. You must end it, I think." It continues after a short pause. "And, of course, you must win!"~
-@86   = ~"The only answer must be obvious...you must find this female who has lied to you and kill her! You must travel to the Abyss and her life must be ended!" Its fangs twitch and pinch before your eyes. "Or, at least, that's what I would do."~
+@86   = ~"The answer should be obvious: you need to find the female who lied to you and kill her! You must travel to the Abyss, and her life must be ended!" Its fangs twitch and pinch before your eyes. "Or, at least, that's what I would do."~
 
 // Advice for IWDEE
 @87   = ~The familiar pauses for a moment as it ponders. "There might be something to eat if we join the caravan."~
