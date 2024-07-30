@@ -1,4 +1,4 @@
-WTP Familiars v2.7
+WTP Familiars v2.8
 ==================
 
 **Authors: Rabain & [Salk](mailto:crimes73@gmail.com)  
@@ -674,3 +674,7 @@ Credits and Copyright Information
 *   Enabled proper installation of global scripts in BGEE/SOD campaign/IWDEE
 *   Incorporated Salk's 2.55 dialogue refinements
 *   Updated to WeiDU 249
+
+**Version 2.8**
+
+* Solved Magic Stacking Bug that occured by summoning PseudoDragon Familiar and Imp Familiar 
