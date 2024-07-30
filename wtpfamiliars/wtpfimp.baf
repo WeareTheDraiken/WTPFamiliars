@@ -1474,6 +1474,7 @@ IF
 THEN
   RESPONSE #100
     ActionOverride(%famsummoner%,ApplySpellRES("WTPFCON8",Myself))
+    ActionOverride(%famsummoner%,ApplySpellRES("WTPFCON9",Myself))
     SetGlobal("#GMR_Active","LOCALS",1)
 END
 

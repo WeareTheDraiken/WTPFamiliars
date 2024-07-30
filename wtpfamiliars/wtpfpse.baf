@@ -1384,9 +1384,11 @@ IF
   Global("#GMR_Active","LOCALS",0)
   !Global("#GFAMGO","GLOBAL",2)
   Range(%famsummoner%,15)
+  Global("#GBhaalHP1","GLOBAL",0) // GOooPD compatibility check
 THEN
   RESPONSE #100
     ActionOverride(%famsummoner%,ApplySpellRES("WTPFCON8",Myself))
+    ActionOverride(%famsummoner%,ApplySpellRES("WTPFCON9",Myself))
     SetGlobal("#GMR_Active","LOCALS",1)
 END
 
@@ -1397,7 +1399,9 @@ IF
     TriggerOverride(%famsummoner%,Detect([ENEMY]))
   Global("#GMR_Active","LOCALS",1)
   !Global("#GFAMGO","GLOBAL",2)
-  !Range(%famsummoner%,15)
+  OR(2)
+    !Range(%famsummoner%,15)
+    Global("#GBhaalHP1","GLOBAL",2) // GOooPD compatibility check
 THEN
   RESPONSE #100
     ActionOverride(%famsummoner%,ApplySpellRES("WTPFCON9",Myself))
@@ -1412,7 +1416,9 @@ IF
     TriggerOverride(%famsummoner%,Detect([ENEMY]))
   Global("#GMR_Active","LOCALS",1)
   !Global("#GFAMGO","GLOBAL",2)
-  !Range(%famsummoner%,15)
+  OR(2)
+    !Range(%famsummoner%,15)
+    Global("#GBhaalHP1","GLOBAL",2) // GOooPD compatibility check
 THEN
   RESPONSE #100
     ActionOverride(%famsummoner%,ApplySpellRES("WTPFCON9",Myself))
